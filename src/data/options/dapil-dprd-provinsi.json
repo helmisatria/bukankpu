@@ -1,0 +1,1208 @@
+{
+  "data": [
+    {
+      "kode_dapil": "110001",
+      "nama_dapil": "ACEH 1"
+    },
+    {
+      "kode_dapil": "110002",
+      "nama_dapil": "ACEH 2"
+    },
+    {
+      "kode_dapil": "110003",
+      "nama_dapil": "ACEH 3"
+    },
+    {
+      "kode_dapil": "110004",
+      "nama_dapil": "ACEH 4"
+    },
+    {
+      "kode_dapil": "110005",
+      "nama_dapil": "ACEH 5"
+    },
+    {
+      "kode_dapil": "110006",
+      "nama_dapil": "ACEH 6"
+    },
+    {
+      "kode_dapil": "110007",
+      "nama_dapil": "ACEH 7"
+    },
+    {
+      "kode_dapil": "110008",
+      "nama_dapil": "ACEH 8"
+    },
+    {
+      "kode_dapil": "110009",
+      "nama_dapil": "ACEH 9"
+    },
+    {
+      "kode_dapil": "110010",
+      "nama_dapil": "ACEH 10"
+    },
+    {
+      "kode_dapil": "120001",
+      "nama_dapil": "SUMATERA UTARA 1"
+    },
+    {
+      "kode_dapil": "120002",
+      "nama_dapil": "SUMATERA UTARA 2"
+    },
+    {
+      "kode_dapil": "120003",
+      "nama_dapil": "SUMATERA UTARA 3"
+    },
+    {
+      "kode_dapil": "120004",
+      "nama_dapil": "SUMATERA UTARA 4"
+    },
+    {
+      "kode_dapil": "120005",
+      "nama_dapil": "SUMATERA UTARA 5"
+    },
+    {
+      "kode_dapil": "120006",
+      "nama_dapil": "SUMATERA UTARA 6"
+    },
+    {
+      "kode_dapil": "120007",
+      "nama_dapil": "SUMATERA UTARA 7"
+    },
+    {
+      "kode_dapil": "120008",
+      "nama_dapil": "SUMATERA UTARA 8"
+    },
+    {
+      "kode_dapil": "120009",
+      "nama_dapil": "SUMATERA UTARA 9"
+    },
+    {
+      "kode_dapil": "120010",
+      "nama_dapil": "SUMATERA UTARA 10"
+    },
+    {
+      "kode_dapil": "120011",
+      "nama_dapil": "SUMATERA UTARA 11"
+    },
+    {
+      "kode_dapil": "120012",
+      "nama_dapil": "SUMATERA UTARA 12"
+    },
+    {
+      "kode_dapil": "130001",
+      "nama_dapil": "SUMATERA BARAT 1"
+    },
+    {
+      "kode_dapil": "130002",
+      "nama_dapil": "SUMATERA BARAT 2"
+    },
+    {
+      "kode_dapil": "130003",
+      "nama_dapil": "SUMATERA BARAT 3"
+    },
+    {
+      "kode_dapil": "130004",
+      "nama_dapil": "SUMATERA BARAT 4"
+    },
+    {
+      "kode_dapil": "130005",
+      "nama_dapil": "SUMATERA BARAT 5"
+    },
+    {
+      "kode_dapil": "130006",
+      "nama_dapil": "SUMATERA BARAT 6"
+    },
+    {
+      "kode_dapil": "130007",
+      "nama_dapil": "SUMATERA BARAT 7"
+    },
+    {
+      "kode_dapil": "130008",
+      "nama_dapil": "SUMATERA BARAT 8"
+    },
+    {
+      "kode_dapil": "140001",
+      "nama_dapil": "RIAU 1"
+    },
+    {
+      "kode_dapil": "140002",
+      "nama_dapil": "RIAU 2"
+    },
+    {
+      "kode_dapil": "140003",
+      "nama_dapil": "RIAU 3"
+    },
+    {
+      "kode_dapil": "140004",
+      "nama_dapil": "RIAU 4"
+    },
+    {
+      "kode_dapil": "140005",
+      "nama_dapil": "RIAU 5"
+    },
+    {
+      "kode_dapil": "140006",
+      "nama_dapil": "RIAU 6"
+    },
+    {
+      "kode_dapil": "140007",
+      "nama_dapil": "RIAU 7"
+    },
+    {
+      "kode_dapil": "140008",
+      "nama_dapil": "RIAU 8"
+    },
+    {
+      "kode_dapil": "150001",
+      "nama_dapil": "JAMBI 1"
+    },
+    {
+      "kode_dapil": "150002",
+      "nama_dapil": "JAMBI 2"
+    },
+    {
+      "kode_dapil": "150003",
+      "nama_dapil": "JAMBI 3"
+    },
+    {
+      "kode_dapil": "150004",
+      "nama_dapil": "JAMBI 4"
+    },
+    {
+      "kode_dapil": "150005",
+      "nama_dapil": "JAMBI 5"
+    },
+    {
+      "kode_dapil": "150006",
+      "nama_dapil": "JAMBI 6"
+    },
+    {
+      "kode_dapil": "160001",
+      "nama_dapil": "SUMATERA SELATAN 1"
+    },
+    {
+      "kode_dapil": "160002",
+      "nama_dapil": "SUMATERA SELATAN 2"
+    },
+    {
+      "kode_dapil": "160003",
+      "nama_dapil": "SUMATERA SELATAN 3"
+    },
+    {
+      "kode_dapil": "160004",
+      "nama_dapil": "SUMATERA SELATAN 4"
+    },
+    {
+      "kode_dapil": "160005",
+      "nama_dapil": "SUMATERA SELATAN 5"
+    },
+    {
+      "kode_dapil": "160006",
+      "nama_dapil": "SUMATERA SELATAN 6"
+    },
+    {
+      "kode_dapil": "160007",
+      "nama_dapil": "SUMATERA SELATAN 7"
+    },
+    {
+      "kode_dapil": "160008",
+      "nama_dapil": "SUMATERA SELATAN 8"
+    },
+    {
+      "kode_dapil": "160009",
+      "nama_dapil": "SUMATERA SELATAN 9"
+    },
+    {
+      "kode_dapil": "160010",
+      "nama_dapil": "SUMATERA SELATAN 10"
+    },
+    {
+      "kode_dapil": "170001",
+      "nama_dapil": "BENGKULU 1"
+    },
+    {
+      "kode_dapil": "170002",
+      "nama_dapil": "BENGKULU 2"
+    },
+    {
+      "kode_dapil": "170003",
+      "nama_dapil": "BENGKULU 3"
+    },
+    {
+      "kode_dapil": "170004",
+      "nama_dapil": "BENGKULU 4"
+    },
+    {
+      "kode_dapil": "170005",
+      "nama_dapil": "BENGKULU 5"
+    },
+    {
+      "kode_dapil": "170006",
+      "nama_dapil": "BENGKULU 6"
+    },
+    {
+      "kode_dapil": "170007",
+      "nama_dapil": "BENGKULU 7"
+    },
+    {
+      "kode_dapil": "180001",
+      "nama_dapil": "LAMPUNG 1"
+    },
+    {
+      "kode_dapil": "180002",
+      "nama_dapil": "LAMPUNG 2"
+    },
+    {
+      "kode_dapil": "180003",
+      "nama_dapil": "LAMPUNG 3"
+    },
+    {
+      "kode_dapil": "180004",
+      "nama_dapil": "LAMPUNG 4"
+    },
+    {
+      "kode_dapil": "180005",
+      "nama_dapil": "LAMPUNG 5"
+    },
+    {
+      "kode_dapil": "180006",
+      "nama_dapil": "LAMPUNG 6"
+    },
+    {
+      "kode_dapil": "180007",
+      "nama_dapil": "LAMPUNG 7"
+    },
+    {
+      "kode_dapil": "180008",
+      "nama_dapil": "LAMPUNG 8"
+    },
+    {
+      "kode_dapil": "190001",
+      "nama_dapil": "KEPULAUAN BANGKA BELITUNG 1"
+    },
+    {
+      "kode_dapil": "190002",
+      "nama_dapil": "KEPULAUAN BANGKA BELITUNG 2"
+    },
+    {
+      "kode_dapil": "190003",
+      "nama_dapil": "KEPULAUAN BANGKA BELITUNG 3"
+    },
+    {
+      "kode_dapil": "190004",
+      "nama_dapil": "KEPULAUAN BANGKA BELITUNG 4"
+    },
+    {
+      "kode_dapil": "190005",
+      "nama_dapil": "KEPULAUAN BANGKA BELITUNG 5"
+    },
+    {
+      "kode_dapil": "190006",
+      "nama_dapil": "KEPULAUAN BANGKA BELITUNG 6"
+    },
+    {
+      "kode_dapil": "210001",
+      "nama_dapil": "KEPULAUAN RIAU 1"
+    },
+    {
+      "kode_dapil": "210002",
+      "nama_dapil": "KEPULAUAN RIAU 2"
+    },
+    {
+      "kode_dapil": "210003",
+      "nama_dapil": "KEPULAUAN RIAU 3"
+    },
+    {
+      "kode_dapil": "210004",
+      "nama_dapil": "KEPULAUAN RIAU 4"
+    },
+    {
+      "kode_dapil": "210005",
+      "nama_dapil": "KEPULAUAN RIAU 5"
+    },
+    {
+      "kode_dapil": "210006",
+      "nama_dapil": "KEPULAUAN RIAU 6"
+    },
+    {
+      "kode_dapil": "210007",
+      "nama_dapil": "KEPULAUAN RIAU 7"
+    },
+    {
+      "kode_dapil": "310001",
+      "nama_dapil": "DKI JAKARTA 1"
+    },
+    {
+      "kode_dapil": "310002",
+      "nama_dapil": "DKI JAKARTA 2"
+    },
+    {
+      "kode_dapil": "310003",
+      "nama_dapil": "DKI JAKARTA 3"
+    },
+    {
+      "kode_dapil": "310004",
+      "nama_dapil": "DKI JAKARTA 4"
+    },
+    {
+      "kode_dapil": "310005",
+      "nama_dapil": "DKI JAKARTA 5"
+    },
+    {
+      "kode_dapil": "310006",
+      "nama_dapil": "DKI JAKARTA 6"
+    },
+    {
+      "kode_dapil": "310007",
+      "nama_dapil": "DKI JAKARTA 7"
+    },
+    {
+      "kode_dapil": "310008",
+      "nama_dapil": "DKI JAKARTA 8"
+    },
+    {
+      "kode_dapil": "310009",
+      "nama_dapil": "DKI JAKARTA 9"
+    },
+    {
+      "kode_dapil": "310010",
+      "nama_dapil": "DKI JAKARTA 10"
+    },
+    {
+      "kode_dapil": "320001",
+      "nama_dapil": "JAWA BARAT 1"
+    },
+    {
+      "kode_dapil": "320002",
+      "nama_dapil": "JAWA BARAT 2"
+    },
+    {
+      "kode_dapil": "320003",
+      "nama_dapil": "JAWA BARAT 3"
+    },
+    {
+      "kode_dapil": "320004",
+      "nama_dapil": "JAWA BARAT 4"
+    },
+    {
+      "kode_dapil": "320005",
+      "nama_dapil": "JAWA BARAT 5"
+    },
+    {
+      "kode_dapil": "320006",
+      "nama_dapil": "JAWA BARAT 6"
+    },
+    {
+      "kode_dapil": "320007",
+      "nama_dapil": "JAWA BARAT 7"
+    },
+    {
+      "kode_dapil": "320008",
+      "nama_dapil": "JAWA BARAT 8"
+    },
+    {
+      "kode_dapil": "320009",
+      "nama_dapil": "JAWA BARAT 9"
+    },
+    {
+      "kode_dapil": "320010",
+      "nama_dapil": "JAWA BARAT 10"
+    },
+    {
+      "kode_dapil": "320011",
+      "nama_dapil": "JAWA BARAT 11"
+    },
+    {
+      "kode_dapil": "320012",
+      "nama_dapil": "JAWA BARAT 12"
+    },
+    {
+      "kode_dapil": "320013",
+      "nama_dapil": "JAWA BARAT 13"
+    },
+    {
+      "kode_dapil": "320014",
+      "nama_dapil": "JAWA BARAT 14"
+    },
+    {
+      "kode_dapil": "320015",
+      "nama_dapil": "JAWA BARAT 15"
+    },
+    {
+      "kode_dapil": "330001",
+      "nama_dapil": "JAWA TENGAH 1"
+    },
+    {
+      "kode_dapil": "330002",
+      "nama_dapil": "JAWA TENGAH 2"
+    },
+    {
+      "kode_dapil": "330003",
+      "nama_dapil": "JAWA TENGAH 3"
+    },
+    {
+      "kode_dapil": "330004",
+      "nama_dapil": "JAWA TENGAH 4"
+    },
+    {
+      "kode_dapil": "330005",
+      "nama_dapil": "JAWA TENGAH 5"
+    },
+    {
+      "kode_dapil": "330006",
+      "nama_dapil": "JAWA TENGAH 6"
+    },
+    {
+      "kode_dapil": "330007",
+      "nama_dapil": "JAWA TENGAH 7"
+    },
+    {
+      "kode_dapil": "330008",
+      "nama_dapil": "JAWA TENGAH 8"
+    },
+    {
+      "kode_dapil": "330009",
+      "nama_dapil": "JAWA TENGAH 9"
+    },
+    {
+      "kode_dapil": "330010",
+      "nama_dapil": "JAWA TENGAH 10"
+    },
+    {
+      "kode_dapil": "330011",
+      "nama_dapil": "JAWA TENGAH 11"
+    },
+    {
+      "kode_dapil": "330012",
+      "nama_dapil": "JAWA TENGAH 12"
+    },
+    {
+      "kode_dapil": "330013",
+      "nama_dapil": "JAWA TENGAH 13"
+    },
+    {
+      "kode_dapil": "340001",
+      "nama_dapil": "DAERAH ISTIMEWA YOGYAKARTA 1"
+    },
+    {
+      "kode_dapil": "340002",
+      "nama_dapil": "DAERAH ISTIMEWA YOGYAKARTA 2"
+    },
+    {
+      "kode_dapil": "340003",
+      "nama_dapil": "DAERAH ISTIMEWA YOGYAKARTA 3"
+    },
+    {
+      "kode_dapil": "340004",
+      "nama_dapil": "DAERAH ISTIMEWA YOGYAKARTA 4"
+    },
+    {
+      "kode_dapil": "340005",
+      "nama_dapil": "DAERAH ISTIMEWA YOGYAKARTA 5"
+    },
+    {
+      "kode_dapil": "340006",
+      "nama_dapil": "DAERAH ISTIMEWA YOGYAKARTA 6"
+    },
+    {
+      "kode_dapil": "340007",
+      "nama_dapil": "DAERAH ISTIMEWA YOGYAKARTA 7"
+    },
+    {
+      "kode_dapil": "350001",
+      "nama_dapil": "JAWA TIMUR 1"
+    },
+    {
+      "kode_dapil": "350002",
+      "nama_dapil": "JAWA TIMUR 2"
+    },
+    {
+      "kode_dapil": "350003",
+      "nama_dapil": "JAWA TIMUR 3"
+    },
+    {
+      "kode_dapil": "350004",
+      "nama_dapil": "JAWA TIMUR 4"
+    },
+    {
+      "kode_dapil": "350005",
+      "nama_dapil": "JAWA TIMUR 5"
+    },
+    {
+      "kode_dapil": "350006",
+      "nama_dapil": "JAWA TIMUR 6"
+    },
+    {
+      "kode_dapil": "350007",
+      "nama_dapil": "JAWA TIMUR 7"
+    },
+    {
+      "kode_dapil": "350008",
+      "nama_dapil": "JAWA TIMUR 8"
+    },
+    {
+      "kode_dapil": "350009",
+      "nama_dapil": "JAWA TIMUR 9"
+    },
+    {
+      "kode_dapil": "350010",
+      "nama_dapil": "JAWA TIMUR 10"
+    },
+    {
+      "kode_dapil": "350011",
+      "nama_dapil": "JAWA TIMUR 11"
+    },
+    {
+      "kode_dapil": "350012",
+      "nama_dapil": "JAWA TIMUR 12"
+    },
+    {
+      "kode_dapil": "350013",
+      "nama_dapil": "JAWA TIMUR 13"
+    },
+    {
+      "kode_dapil": "350014",
+      "nama_dapil": "JAWA TIMUR 14"
+    },
+    {
+      "kode_dapil": "360001",
+      "nama_dapil": "BANTEN 1"
+    },
+    {
+      "kode_dapil": "360002",
+      "nama_dapil": "BANTEN 2"
+    },
+    {
+      "kode_dapil": "360003",
+      "nama_dapil": "BANTEN 3"
+    },
+    {
+      "kode_dapil": "360004",
+      "nama_dapil": "BANTEN 4"
+    },
+    {
+      "kode_dapil": "360005",
+      "nama_dapil": "BANTEN 5"
+    },
+    {
+      "kode_dapil": "360006",
+      "nama_dapil": "BANTEN 6"
+    },
+    {
+      "kode_dapil": "360007",
+      "nama_dapil": "BANTEN 7"
+    },
+    {
+      "kode_dapil": "360008",
+      "nama_dapil": "BANTEN 8"
+    },
+    {
+      "kode_dapil": "360009",
+      "nama_dapil": "BANTEN 9"
+    },
+    {
+      "kode_dapil": "360010",
+      "nama_dapil": "BANTEN 10"
+    },
+    {
+      "kode_dapil": "360011",
+      "nama_dapil": "BANTEN 11"
+    },
+    {
+      "kode_dapil": "360012",
+      "nama_dapil": "BANTEN 12"
+    },
+    {
+      "kode_dapil": "510001",
+      "nama_dapil": "BALI 1"
+    },
+    {
+      "kode_dapil": "510002",
+      "nama_dapil": "BALI 2"
+    },
+    {
+      "kode_dapil": "510003",
+      "nama_dapil": "BALI 3"
+    },
+    {
+      "kode_dapil": "510004",
+      "nama_dapil": "BALI 4"
+    },
+    {
+      "kode_dapil": "510005",
+      "nama_dapil": "BALI 5"
+    },
+    {
+      "kode_dapil": "510006",
+      "nama_dapil": "BALI 6"
+    },
+    {
+      "kode_dapil": "510007",
+      "nama_dapil": "BALI 7"
+    },
+    {
+      "kode_dapil": "510008",
+      "nama_dapil": "BALI 8"
+    },
+    {
+      "kode_dapil": "510009",
+      "nama_dapil": "BALI 9"
+    },
+    {
+      "kode_dapil": "520001",
+      "nama_dapil": "NUSA TENGGARA BARAT 1"
+    },
+    {
+      "kode_dapil": "520002",
+      "nama_dapil": "NUSA TENGGARA BARAT 2"
+    },
+    {
+      "kode_dapil": "520003",
+      "nama_dapil": "NUSA TENGGARA BARAT 3"
+    },
+    {
+      "kode_dapil": "520004",
+      "nama_dapil": "NUSA TENGGARA BARAT 4"
+    },
+    {
+      "kode_dapil": "520005",
+      "nama_dapil": "NUSA TENGGARA BARAT 5"
+    },
+    {
+      "kode_dapil": "520006",
+      "nama_dapil": "NUSA TENGGARA BARAT 6"
+    },
+    {
+      "kode_dapil": "520007",
+      "nama_dapil": "NUSA TENGGARA BARAT 7"
+    },
+    {
+      "kode_dapil": "520008",
+      "nama_dapil": "NUSA TENGGARA BARAT 8"
+    },
+    {
+      "kode_dapil": "530001",
+      "nama_dapil": "NUSA TENGGARA TIMUR 1"
+    },
+    {
+      "kode_dapil": "530002",
+      "nama_dapil": "NUSA TENGGARA TIMUR 2"
+    },
+    {
+      "kode_dapil": "530003",
+      "nama_dapil": "NUSA TENGGARA TIMUR 3"
+    },
+    {
+      "kode_dapil": "530004",
+      "nama_dapil": "NUSA TENGGARA TIMUR 4"
+    },
+    {
+      "kode_dapil": "530005",
+      "nama_dapil": "NUSA TENGGARA TIMUR 5"
+    },
+    {
+      "kode_dapil": "530006",
+      "nama_dapil": "NUSA TENGGARA TIMUR 6"
+    },
+    {
+      "kode_dapil": "530007",
+      "nama_dapil": "NUSA TENGGARA TIMUR 7"
+    },
+    {
+      "kode_dapil": "530008",
+      "nama_dapil": "NUSA TENGGARA TIMUR 8"
+    },
+    {
+      "kode_dapil": "610001",
+      "nama_dapil": "KALIMANTAN BARAT 1"
+    },
+    {
+      "kode_dapil": "610002",
+      "nama_dapil": "KALIMANTAN BARAT 2"
+    },
+    {
+      "kode_dapil": "610003",
+      "nama_dapil": "KALIMANTAN BARAT 3"
+    },
+    {
+      "kode_dapil": "610004",
+      "nama_dapil": "KALIMANTAN BARAT 4"
+    },
+    {
+      "kode_dapil": "610005",
+      "nama_dapil": "KALIMANTAN BARAT 5"
+    },
+    {
+      "kode_dapil": "610006",
+      "nama_dapil": "KALIMANTAN BARAT 6"
+    },
+    {
+      "kode_dapil": "610007",
+      "nama_dapil": "KALIMANTAN BARAT 7"
+    },
+    {
+      "kode_dapil": "610008",
+      "nama_dapil": "KALIMANTAN BARAT 8"
+    },
+    {
+      "kode_dapil": "620001",
+      "nama_dapil": "KALIMANTAN TENGAH 1"
+    },
+    {
+      "kode_dapil": "620002",
+      "nama_dapil": "KALIMANTAN TENGAH 2"
+    },
+    {
+      "kode_dapil": "620003",
+      "nama_dapil": "KALIMANTAN TENGAH 3"
+    },
+    {
+      "kode_dapil": "620004",
+      "nama_dapil": "KALIMANTAN TENGAH 4"
+    },
+    {
+      "kode_dapil": "620005",
+      "nama_dapil": "KALIMANTAN TENGAH 5"
+    },
+    {
+      "kode_dapil": "630001",
+      "nama_dapil": "KALIMANTAN SELATAN 1"
+    },
+    {
+      "kode_dapil": "630002",
+      "nama_dapil": "KALIMANTAN SELATAN 2"
+    },
+    {
+      "kode_dapil": "630003",
+      "nama_dapil": "KALIMANTAN SELATAN 3"
+    },
+    {
+      "kode_dapil": "630004",
+      "nama_dapil": "KALIMANTAN SELATAN 4"
+    },
+    {
+      "kode_dapil": "630005",
+      "nama_dapil": "KALIMANTAN SELATAN 5"
+    },
+    {
+      "kode_dapil": "630006",
+      "nama_dapil": "KALIMANTAN SELATAN 6"
+    },
+    {
+      "kode_dapil": "630007",
+      "nama_dapil": "KALIMANTAN SELATAN 7"
+    },
+    {
+      "kode_dapil": "640001",
+      "nama_dapil": "KALIMANTAN TIMUR 1"
+    },
+    {
+      "kode_dapil": "640002",
+      "nama_dapil": "KALIMANTAN TIMUR 2"
+    },
+    {
+      "kode_dapil": "640003",
+      "nama_dapil": "KALIMANTAN TIMUR 3"
+    },
+    {
+      "kode_dapil": "640004",
+      "nama_dapil": "KALIMANTAN TIMUR 4"
+    },
+    {
+      "kode_dapil": "640005",
+      "nama_dapil": "KALIMANTAN TIMUR 5"
+    },
+    {
+      "kode_dapil": "640006",
+      "nama_dapil": "KALIMANTAN TIMUR 6"
+    },
+    {
+      "kode_dapil": "650001",
+      "nama_dapil": "KALIMANTAN UTARA 1"
+    },
+    {
+      "kode_dapil": "650002",
+      "nama_dapil": "KALIMANTAN UTARA 2"
+    },
+    {
+      "kode_dapil": "650003",
+      "nama_dapil": "KALIMANTAN UTARA 3"
+    },
+    {
+      "kode_dapil": "650004",
+      "nama_dapil": "KALIMANTAN UTARA 4"
+    },
+    {
+      "kode_dapil": "710001",
+      "nama_dapil": "SULAWESI UTARA 1"
+    },
+    {
+      "kode_dapil": "710002",
+      "nama_dapil": "SULAWESI UTARA 2"
+    },
+    {
+      "kode_dapil": "710003",
+      "nama_dapil": "SULAWESI UTARA 3"
+    },
+    {
+      "kode_dapil": "710004",
+      "nama_dapil": "SULAWESI UTARA 4"
+    },
+    {
+      "kode_dapil": "710005",
+      "nama_dapil": "SULAWESI UTARA 5"
+    },
+    {
+      "kode_dapil": "710006",
+      "nama_dapil": "SULAWESI UTARA 6"
+    },
+    {
+      "kode_dapil": "720001",
+      "nama_dapil": "SULAWESI TENGAH 1"
+    },
+    {
+      "kode_dapil": "720002",
+      "nama_dapil": "SULAWESI TENGAH 2"
+    },
+    {
+      "kode_dapil": "720003",
+      "nama_dapil": "SULAWESI TENGAH 3"
+    },
+    {
+      "kode_dapil": "720004",
+      "nama_dapil": "SULAWESI TENGAH 4"
+    },
+    {
+      "kode_dapil": "720005",
+      "nama_dapil": "SULAWESI TENGAH 5"
+    },
+    {
+      "kode_dapil": "720006",
+      "nama_dapil": "SULAWESI TENGAH 6"
+    },
+    {
+      "kode_dapil": "720007",
+      "nama_dapil": "SULAWESI TENGAH 7"
+    },
+    {
+      "kode_dapil": "730001",
+      "nama_dapil": "SULAWESI SELATAN 1"
+    },
+    {
+      "kode_dapil": "730002",
+      "nama_dapil": "SULAWESI SELATAN 2"
+    },
+    {
+      "kode_dapil": "730003",
+      "nama_dapil": "SULAWESI SELATAN 3"
+    },
+    {
+      "kode_dapil": "730004",
+      "nama_dapil": "SULAWESI SELATAN 4"
+    },
+    {
+      "kode_dapil": "730005",
+      "nama_dapil": "SULAWESI SELATAN 5"
+    },
+    {
+      "kode_dapil": "730006",
+      "nama_dapil": "SULAWESI SELATAN 6"
+    },
+    {
+      "kode_dapil": "730007",
+      "nama_dapil": "SULAWESI SELATAN 7"
+    },
+    {
+      "kode_dapil": "730008",
+      "nama_dapil": "SULAWESI SELATAN 8"
+    },
+    {
+      "kode_dapil": "730009",
+      "nama_dapil": "SULAWESI SELATAN 9"
+    },
+    {
+      "kode_dapil": "730010",
+      "nama_dapil": "SULAWESI SELATAN 10"
+    },
+    {
+      "kode_dapil": "730011",
+      "nama_dapil": "SULAWESI SELATAN 11"
+    },
+    {
+      "kode_dapil": "740001",
+      "nama_dapil": "SULAWESI TENGGARA 1"
+    },
+    {
+      "kode_dapil": "740002",
+      "nama_dapil": "SULAWESI TENGGARA 2"
+    },
+    {
+      "kode_dapil": "740003",
+      "nama_dapil": "SULAWESI TENGGARA 3"
+    },
+    {
+      "kode_dapil": "740004",
+      "nama_dapil": "SULAWESI TENGGARA 4"
+    },
+    {
+      "kode_dapil": "740005",
+      "nama_dapil": "SULAWESI TENGGARA 5"
+    },
+    {
+      "kode_dapil": "740006",
+      "nama_dapil": "SULAWESI TENGGARA 6"
+    },
+    {
+      "kode_dapil": "750001",
+      "nama_dapil": "GORONTALO 1"
+    },
+    {
+      "kode_dapil": "750002",
+      "nama_dapil": "GORONTALO 2"
+    },
+    {
+      "kode_dapil": "750003",
+      "nama_dapil": "GORONTALO 3"
+    },
+    {
+      "kode_dapil": "750004",
+      "nama_dapil": "GORONTALO 4"
+    },
+    {
+      "kode_dapil": "750005",
+      "nama_dapil": "GORONTALO 5"
+    },
+    {
+      "kode_dapil": "750006",
+      "nama_dapil": "GORONTALO 6"
+    },
+    {
+      "kode_dapil": "760001",
+      "nama_dapil": "SULAWESI BARAT 1"
+    },
+    {
+      "kode_dapil": "760002",
+      "nama_dapil": "SULAWESI BARAT 2"
+    },
+    {
+      "kode_dapil": "760003",
+      "nama_dapil": "SULAWESI BARAT 3"
+    },
+    {
+      "kode_dapil": "760004",
+      "nama_dapil": "SULAWESI BARAT 4"
+    },
+    {
+      "kode_dapil": "760005",
+      "nama_dapil": "SULAWESI BARAT 5"
+    },
+    {
+      "kode_dapil": "760006",
+      "nama_dapil": "SULAWESI BARAT 6"
+    },
+    {
+      "kode_dapil": "760007",
+      "nama_dapil": "SULAWESI BARAT 7"
+    },
+    {
+      "kode_dapil": "810001",
+      "nama_dapil": "MALUKU 1"
+    },
+    {
+      "kode_dapil": "810002",
+      "nama_dapil": "MALUKU 2"
+    },
+    {
+      "kode_dapil": "810003",
+      "nama_dapil": "MALUKU 3"
+    },
+    {
+      "kode_dapil": "810004",
+      "nama_dapil": "MALUKU 4"
+    },
+    {
+      "kode_dapil": "810005",
+      "nama_dapil": "MALUKU 5"
+    },
+    {
+      "kode_dapil": "810006",
+      "nama_dapil": "MALUKU 6"
+    },
+    {
+      "kode_dapil": "810007",
+      "nama_dapil": "MALUKU 7"
+    },
+    {
+      "kode_dapil": "820001",
+      "nama_dapil": "MALUKU UTARA 1"
+    },
+    {
+      "kode_dapil": "820002",
+      "nama_dapil": "MALUKU UTARA 2"
+    },
+    {
+      "kode_dapil": "820003",
+      "nama_dapil": "MALUKU UTARA 3"
+    },
+    {
+      "kode_dapil": "820004",
+      "nama_dapil": "MALUKU UTARA 4"
+    },
+    {
+      "kode_dapil": "820005",
+      "nama_dapil": "MALUKU UTARA 5"
+    },
+    {
+      "kode_dapil": "910001",
+      "nama_dapil": "P A P U A 1"
+    },
+    {
+      "kode_dapil": "910002",
+      "nama_dapil": "P A P U A 2"
+    },
+    {
+      "kode_dapil": "910003",
+      "nama_dapil": "P A P U A 3"
+    },
+    {
+      "kode_dapil": "910004",
+      "nama_dapil": "P A P U A 4"
+    },
+    {
+      "kode_dapil": "910005",
+      "nama_dapil": "P A P U A 5"
+    },
+    {
+      "kode_dapil": "910006",
+      "nama_dapil": "P A P U A 6"
+    },
+    {
+      "kode_dapil": "910007",
+      "nama_dapil": "P A P U A 7"
+    },
+    {
+      "kode_dapil": "920001",
+      "nama_dapil": "PAPUA BARAT 1"
+    },
+    {
+      "kode_dapil": "920002",
+      "nama_dapil": "PAPUA BARAT 2"
+    },
+    {
+      "kode_dapil": "920003",
+      "nama_dapil": "PAPUA BARAT 3"
+    },
+    {
+      "kode_dapil": "920004",
+      "nama_dapil": "PAPUA BARAT 4"
+    },
+    {
+      "kode_dapil": "920005",
+      "nama_dapil": "PAPUA BARAT 5"
+    },
+    {
+      "kode_dapil": "930001",
+      "nama_dapil": "PAPUA SELATAN 1"
+    },
+    {
+      "kode_dapil": "930002",
+      "nama_dapil": "PAPUA SELATAN 2"
+    },
+    {
+      "kode_dapil": "930003",
+      "nama_dapil": "PAPUA SELATAN 3"
+    },
+    {
+      "kode_dapil": "930004",
+      "nama_dapil": "PAPUA SELATAN 4"
+    },
+    {
+      "kode_dapil": "930005",
+      "nama_dapil": "PAPUA SELATAN 5"
+    },
+    {
+      "kode_dapil": "940001",
+      "nama_dapil": "PAPUA TENGAH 1"
+    },
+    {
+      "kode_dapil": "940002",
+      "nama_dapil": "PAPUA TENGAH 2"
+    },
+    {
+      "kode_dapil": "940003",
+      "nama_dapil": "PAPUA TENGAH 3"
+    },
+    {
+      "kode_dapil": "940004",
+      "nama_dapil": "PAPUA TENGAH 4"
+    },
+    {
+      "kode_dapil": "940005",
+      "nama_dapil": "PAPUA TENGAH 5"
+    },
+    {
+      "kode_dapil": "940006",
+      "nama_dapil": "PAPUA TENGAH 6"
+    },
+    {
+      "kode_dapil": "940007",
+      "nama_dapil": "PAPUA TENGAH 7"
+    },
+    {
+      "kode_dapil": "940008",
+      "nama_dapil": "PAPUA TENGAH 8"
+    },
+    {
+      "kode_dapil": "950001",
+      "nama_dapil": "PAPUA PEGUNUNGAN 1"
+    },
+    {
+      "kode_dapil": "950002",
+      "nama_dapil": "PAPUA PEGUNUNGAN 2"
+    },
+    {
+      "kode_dapil": "950003",
+      "nama_dapil": "PAPUA PEGUNUNGAN 3"
+    },
+    {
+      "kode_dapil": "950004",
+      "nama_dapil": "PAPUA PEGUNUNGAN 4"
+    },
+    {
+      "kode_dapil": "950005",
+      "nama_dapil": "PAPUA PEGUNUNGAN 5"
+    },
+    {
+      "kode_dapil": "950006",
+      "nama_dapil": "PAPUA PEGUNUNGAN 6"
+    },
+    {
+      "kode_dapil": "950007",
+      "nama_dapil": "PAPUA PEGUNUNGAN 7"
+    },
+    {
+      "kode_dapil": "960001",
+      "nama_dapil": "PAPUA BARAT DAYA 1"
+    },
+    {
+      "kode_dapil": "960002",
+      "nama_dapil": "PAPUA BARAT DAYA 2"
+    },
+    {
+      "kode_dapil": "960003",
+      "nama_dapil": "PAPUA BARAT DAYA 3"
+    },
+    {
+      "kode_dapil": "960004",
+      "nama_dapil": "PAPUA BARAT DAYA 4"
+    },
+    {
+      "kode_dapil": "960005",
+      "nama_dapil": "PAPUA BARAT DAYA 5"
+    },
+    {
+      "kode_dapil": "960006",
+      "nama_dapil": "PAPUA BARAT DAYA 6"
+    }
+  ]
+}

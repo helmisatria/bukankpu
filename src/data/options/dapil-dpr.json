@@ -1,0 +1,340 @@
+{
+  "data": [
+    {
+      "kode_dapil": "1101",
+      "nama_dapil": "ACEH I"
+    },
+    {
+      "kode_dapil": "1102",
+      "nama_dapil": "ACEH II"
+    },
+    {
+      "kode_dapil": "1201",
+      "nama_dapil": "SUMATERA UTARA I"
+    },
+    {
+      "kode_dapil": "1202",
+      "nama_dapil": "SUMATERA UTARA II"
+    },
+    {
+      "kode_dapil": "1203",
+      "nama_dapil": "SUMATERA UTARA III"
+    },
+    {
+      "kode_dapil": "1301",
+      "nama_dapil": "SUMATERA BARAT I"
+    },
+    {
+      "kode_dapil": "1302",
+      "nama_dapil": "SUMATERA BARAT II"
+    },
+    {
+      "kode_dapil": "1401",
+      "nama_dapil": "RIAU I"
+    },
+    {
+      "kode_dapil": "1402",
+      "nama_dapil": "RIAU II"
+    },
+    {
+      "kode_dapil": "1501",
+      "nama_dapil": "JAMBI"
+    },
+    {
+      "kode_dapil": "1601",
+      "nama_dapil": "SUMATERA SELATAN I"
+    },
+    {
+      "kode_dapil": "1602",
+      "nama_dapil": "SUMATERA SELATAN II"
+    },
+    {
+      "kode_dapil": "1701",
+      "nama_dapil": "BENGKULU"
+    },
+    {
+      "kode_dapil": "1801",
+      "nama_dapil": "LAMPUNG I"
+    },
+    {
+      "kode_dapil": "1802",
+      "nama_dapil": "LAMPUNG II"
+    },
+    {
+      "kode_dapil": "1901",
+      "nama_dapil": "KEPULAUAN BANGKA BELITUNG"
+    },
+    {
+      "kode_dapil": "2101",
+      "nama_dapil": "KEPULAUAN RIAU"
+    },
+    {
+      "kode_dapil": "3101",
+      "nama_dapil": "DKI JAKARTA I"
+    },
+    {
+      "kode_dapil": "3102",
+      "nama_dapil": "DKI JAKARTA II"
+    },
+    {
+      "kode_dapil": "3103",
+      "nama_dapil": "DKI JAKARTA III"
+    },
+    {
+      "kode_dapil": "3201",
+      "nama_dapil": "JAWA BARAT I"
+    },
+    {
+      "kode_dapil": "3202",
+      "nama_dapil": "JAWA BARAT II"
+    },
+    {
+      "kode_dapil": "3203",
+      "nama_dapil": "JAWA BARAT III"
+    },
+    {
+      "kode_dapil": "3204",
+      "nama_dapil": "JAWA BARAT IV"
+    },
+    {
+      "kode_dapil": "3205",
+      "nama_dapil": "JAWA BARAT V"
+    },
+    {
+      "kode_dapil": "3206",
+      "nama_dapil": "JAWA BARAT VI"
+    },
+    {
+      "kode_dapil": "3207",
+      "nama_dapil": "JAWA BARAT VII"
+    },
+    {
+      "kode_dapil": "3208",
+      "nama_dapil": "JAWA BARAT VIII"
+    },
+    {
+      "kode_dapil": "3209",
+      "nama_dapil": "JAWA BARAT VIX"
+    },
+    {
+      "kode_dapil": "3210",
+      "nama_dapil": "JAWA BARAT X"
+    },
+    {
+      "kode_dapil": "3211",
+      "nama_dapil": "JAWA BARAT XI"
+    },
+    {
+      "kode_dapil": "3301",
+      "nama_dapil": "JAWA TENGAH I"
+    },
+    {
+      "kode_dapil": "3302",
+      "nama_dapil": "JAWA TENGAH II"
+    },
+    {
+      "kode_dapil": "3303",
+      "nama_dapil": "JAWA TENGAH III"
+    },
+    {
+      "kode_dapil": "3304",
+      "nama_dapil": "JAWA TENGAH IV"
+    },
+    {
+      "kode_dapil": "3305",
+      "nama_dapil": "JAWA TENGAH V"
+    },
+    {
+      "kode_dapil": "3306",
+      "nama_dapil": "JAWA TENGAH VI"
+    },
+    {
+      "kode_dapil": "3307",
+      "nama_dapil": "JAWA TENGAH VII"
+    },
+    {
+      "kode_dapil": "3308",
+      "nama_dapil": "JAWA TENGAH VIII"
+    },
+    {
+      "kode_dapil": "3309",
+      "nama_dapil": "JAWA TENGAH IX"
+    },
+    {
+      "kode_dapil": "3310",
+      "nama_dapil": "JAWA TENGAH X"
+    },
+    {
+      "kode_dapil": "3401",
+      "nama_dapil": "DAERAH ISTIMEWA YOGYAKARTA"
+    },
+    {
+      "kode_dapil": "3501",
+      "nama_dapil": "JAWA TIMUR I"
+    },
+    {
+      "kode_dapil": "3502",
+      "nama_dapil": "JAWA TIMUR II"
+    },
+    {
+      "kode_dapil": "3503",
+      "nama_dapil": "JAWA TIMUR III"
+    },
+    {
+      "kode_dapil": "3504",
+      "nama_dapil": "JAWA TIMUR IV"
+    },
+    {
+      "kode_dapil": "3505",
+      "nama_dapil": "JAWA TIMUR V"
+    },
+    {
+      "kode_dapil": "3506",
+      "nama_dapil": "JAWA TIMUR VI"
+    },
+    {
+      "kode_dapil": "3507",
+      "nama_dapil": "JAWA TIMUR VII"
+    },
+    {
+      "kode_dapil": "3508",
+      "nama_dapil": "JAWA TIMUR VIII"
+    },
+    {
+      "kode_dapil": "3509",
+      "nama_dapil": "JAWA TIMUR IX"
+    },
+    {
+      "kode_dapil": "3510",
+      "nama_dapil": "JAWA TIMUR X"
+    },
+    {
+      "kode_dapil": "3511",
+      "nama_dapil": "JAWA TIMUR XI"
+    },
+    {
+      "kode_dapil": "3601",
+      "nama_dapil": "BANTEN I"
+    },
+    {
+      "kode_dapil": "3602",
+      "nama_dapil": "BANTEN II"
+    },
+    {
+      "kode_dapil": "3603",
+      "nama_dapil": "BANTEN III"
+    },
+    {
+      "kode_dapil": "5101",
+      "nama_dapil": "BALI "
+    },
+    {
+      "kode_dapil": "5201",
+      "nama_dapil": "NUSA TENGGARA BARAT I"
+    },
+    {
+      "kode_dapil": "5202",
+      "nama_dapil": "NUSA TENGGARA BARAT II"
+    },
+    {
+      "kode_dapil": "5301",
+      "nama_dapil": "NUSA TENGGARA TIMUR I"
+    },
+    {
+      "kode_dapil": "5302",
+      "nama_dapil": "NUSA TENGGARA TIMUR II"
+    },
+    {
+      "kode_dapil": "6101",
+      "nama_dapil": "KALIMANTAN BARAT I"
+    },
+    {
+      "kode_dapil": "6102",
+      "nama_dapil": "KALIMANTAN BARAT II"
+    },
+    {
+      "kode_dapil": "6201",
+      "nama_dapil": "KALIMANTAN TENGAH"
+    },
+    {
+      "kode_dapil": "6301",
+      "nama_dapil": "KALIMANTAN SELATAN I"
+    },
+    {
+      "kode_dapil": "6302",
+      "nama_dapil": "KALIMANTAN SELATAN II"
+    },
+    {
+      "kode_dapil": "6401",
+      "nama_dapil": "KALIMANTAN TIMUR"
+    },
+    {
+      "kode_dapil": "6501",
+      "nama_dapil": "KALIMANTAN UTARA"
+    },
+    {
+      "kode_dapil": "7101",
+      "nama_dapil": "SULAWESI UTARA"
+    },
+    {
+      "kode_dapil": "7201",
+      "nama_dapil": "SULAWESI TENGAH"
+    },
+    {
+      "kode_dapil": "7301",
+      "nama_dapil": "SULAWESI SELATAN I"
+    },
+    {
+      "kode_dapil": "7302",
+      "nama_dapil": "SULAWESI SELATAN II"
+    },
+    {
+      "kode_dapil": "7303",
+      "nama_dapil": "SULAWESI SELATAN III"
+    },
+    {
+      "kode_dapil": "7401",
+      "nama_dapil": "SULAWESI TENGGARA"
+    },
+    {
+      "kode_dapil": "7501",
+      "nama_dapil": "GORONTALO"
+    },
+    {
+      "kode_dapil": "7601",
+      "nama_dapil": "SULAWESI BARAT"
+    },
+    {
+      "kode_dapil": "8101",
+      "nama_dapil": "MALUKU"
+    },
+    {
+      "kode_dapil": "8201",
+      "nama_dapil": "MALUKU UTARA"
+    },
+    {
+      "kode_dapil": "9101",
+      "nama_dapil": "PAPUA"
+    },
+    {
+      "kode_dapil": "9201",
+      "nama_dapil": "PAPUA BARAT"
+    },
+    {
+      "kode_dapil": "9301",
+      "nama_dapil": "PAPUA SELATAN"
+    },
+    {
+      "kode_dapil": "9401",
+      "nama_dapil": "PAPUA TENGAH"
+    },
+    {
+      "kode_dapil": "9501",
+      "nama_dapil": "PAPUA PEGUNUNGAN"
+    },
+    {
+      "kode_dapil": "9601",
+      "nama_dapil": "PAPUA BARAT DAYA"
+    }
+  ]
+}
