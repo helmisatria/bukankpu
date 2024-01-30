@@ -1,0 +1,11 @@
+[
+  [
+    "<center><i>Nama Provinsi</i><br><b><font size=\"3\">ACEH</font></b></center>",
+    "<center><i>Nomor urut</i><br><b><font size=\"3\">30</font></b></center>",
+    "<center><img src=\"../berkas-dpd-dct/XX/XX_30_XXX.jpg\" width=\"75\" ></center>",
+    "XXX, S.P.",
+    "<center>LAKI - LAKI</center>",
+    "KAB. ACEH BESAR / ACEH",
+    "<form action=\"Dct_dpd/profil\" method=\"post\" enctype=\"multipart/form-data\">\r\n\r\n\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"ID_CANDIDATE\" id=\"ID_CANDIDATE\" value=\"78d27135fd34fd3d7431553d358fxeba657c661f5d30da41b359a74e7cf30e8420eb6xd5ec12a7f30ece600exe99cc5b04b29a2504ae88ca294ce74a45c342787R9UcZl0+DuUP6F7f1KOln8x8mjfXcB7CW9WVIPEQvY=\">\r\n\r\n\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"pilihan_publikasi\" id=\"pilihan_publikasi\" value=\"BERSEDIA\">\r\n\r\n\t\t\t\t\t\t\t\t<input type=\"submit\" style=\"font-size:10px;\" class=\"btn btn-secondary\" value=\"PROFIL\" style=\"width: 10px; height: 10px;\"> </form>"
+  ]
+]

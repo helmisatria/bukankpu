@@ -1,8 +1,14 @@
 import { sqliteTable, text, integer } from "drizzle-orm/sqlite-core";
 
-export const caleg = sqliteTable("caleg", {
+export type SelectCaleg = typeof calegTable.$inferSelect;
+
+export const calegTable = sqliteTable("caleg", {
   id: integer("id").primaryKey({ autoIncrement: true }),
+  /** caleg_type + dapil_code + no_urut + name (lowercased, concat) */
+  calegId: text("caleg_id").unique(),
+  calegType: text("caleg_type", { enum: ["DPD", "DPR", "DPRD_KABKOTA", "DPRD_PROVINSI"] }),
   partai: text("partai"),
+  dapilCode: text("dapil_code"),
   dapil: text("dapil"),
   noUrut: text("no_urut"),
   photoUrl: text("photo_url"),
@@ -23,7 +29,6 @@ export const caleg = sqliteTable("caleg", {
   address_kecamatan: text("address_kecamatan"),
   address_kelurahan: text("address_kelurahan"),
   jobStatus: text("job_status"),
-  /** array */
   job: text("job", { mode: "json" }).$type<
     {
       companyName: string;
@@ -63,6 +68,15 @@ export const caleg = sqliteTable("caleg", {
       year: string;
     }[]
   >(),
+  profileUpdatedAt: text("profile_updated_at"),
   program: text("program"),
   lawStatus: text("law_status"),
+  updatedAt: text("updated_at"),
+});
+
+export const crawlStatus = sqliteTable("crawl_status", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  calegType: text("caleg_type", { enum: ["DPD", "DPR", "DPRD_KABKOTA", "DPRD_PROVINSI"] }),
+  dapilCode: text("dapil_code").unique(),
+  updatedAt: text("updated_at"),
 });

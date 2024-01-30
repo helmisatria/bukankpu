@@ -1,0 +1,13 @@
+[
+  [
+    " <img src=\"../berkas-sipol/parpol/profil/gambar_parpol/1656538128_Logo PKB.png\" width=\"30\" > Partai Kebangkitan Bangsa",
+    "<center><i>Dapil</i><br>DAERAH ISTIMEWA YOGYAKARTA</center>",
+    "<center><i>nomor urut</i><br><b><font size=\"3\">1</font></b></center>",
+    "<center><img src=\"https://infopemilu.kpu.go.id/dct/berkas-silon/calon_unggah/36477/pas_foto/3404061708590002.png\" width=\"75\" loading=\"lazy\"></center>",
+    "AGUS SULISTIYONO, S.E.",
+    "LAKI - LAKI",
+    "SLEMAN",
+    "",
+    "<form action=\"Dct_dpr/profile\" method=\"post\" enctype=\"multipart/form-data\">\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"id_calon_dpr\" id=\"id_calon_dpr\" value=\"af028676f0d0c8ce9185f2138f8e52a052277144ea7d932fa196caad4c5da983d0d52e108fb4b3ce456da17b21df1d0f40aed3701de4fdf0083f6a4f0b801564R/V3QF4omvv7GRr5v+5+WD2sjolLPuOow8W/02I7lUE=\">\r\n\t\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"logo_partai\" id=\"logo_partai\" value=\"berkas-sipol/parpol/profil/gambar_parpol/1656538128_Logo PKB.png\">\r\n\t\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"id_parpol\" id=\"id_parpol\" value=\"8\">\r\n                                                                     \t<input type=\"hidden\" name=\"code\" id=\"code\">\r\n\t\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"pilihan_publikasi\" id=\"pilihan_publikasi\" value=\"\">\r\n\t\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"status_publikasi\" id=\"status_publikasi\" value=\"Bersedia\">\r\n\t\t\t\t\t\t\t\t\t<input type=\"submit\" style=\"font-size:10px;\" class=\"btn btn-secondary\" value=\"PROFIL\" style=\"width: 10px; height: 10px;\"> </form>"
+  ]
+]
