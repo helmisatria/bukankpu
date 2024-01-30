@@ -172,7 +172,7 @@ async function crawlDapil(
         timeout += 1;
       });
 
-    await sleep(1000); // 1 second
+    await sleep(2_000);
   }
 }
 
