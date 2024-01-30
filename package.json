@@ -2,22 +2,38 @@
   "name": "bukankpu",
   "type": "module",
   "scripts": {
-    "dev": "tsx src/scripts/crawl.caleg.ts",
-    "db:push": "drizzle-kit push:sqlite",
-    "db:generate": "drizzle-kit generate:sqlite"
+    "crawl": "tsx crawl/scripts/crawl.caleg.ts",
+    "crawl:db:push": "drizzle-kit push:sqlite",
+    "crawl:db:generate": "drizzle-kit generate:sqlite",
+    "web:dev": "astro dev",
+    "web:start": "astro dev",
+    "web:build": "astro check && astro build",
+    "web:preview": "wrangler pages dev ./dist",
+    "db:seed:local": "DB_ENV=local tsx crawl/db/seed/seed-d1.ts",
+    "db:seed:production": "DB_ENV=production tsx crawl/db/seed/seed-d1.ts",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local",
+    "db:migrate:production": "wrangler d1 migrations apply DB"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240129.0",
     "@types/better-sqlite3": "^7.6.9",
     "@types/bun": "latest",
+    "@types/fs-extra": "^11.0.4",
     "drizzle-kit": "^0.20.13",
+    "nx": "17.3.0",
     "tsx": "^4.7.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@astrojs/check": "^0.4.1",
+    "@astrojs/cloudflare": "^9.0.0",
+    "astro": "^4.2.6",
     "axios": "^1.6.7",
     "better-sqlite3": "^9.3.0",
-    "drizzle-orm": "^0.29.3"
+    "drizzle-orm": "^0.29.3",
+    "fs-extra": "^11.2.0",
+    "typescript": "^5.3.3"
   }
 }

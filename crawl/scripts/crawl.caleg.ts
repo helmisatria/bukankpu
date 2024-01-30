@@ -8,18 +8,18 @@ import {
   extractNomorUrut,
   extractProfileId,
   extractTextAfterImg,
-} from "../helpers/parser";
-import { calegTable, crawlStatus, type SelectCaleg } from "../db/db.schema";
+} from "./helpers/parser";
+import { calegTable, crawlStatus, type SelectCaleg } from "../../src/db/db.schema";
 import { db } from "../db/db";
 import { and, eq } from "drizzle-orm";
 
 let timeout = 0;
 
 const dapil = {
-  DPD: await import("../data/options/dapil-dpd.json").then((m) => m.data),
-  DPR: await import("../data/options/dapil-dpr.json").then((m) => m.data),
-  DPRD_KABKOTA: await import("../data/options/dapil-dprd-kabkota.json").then((m) => m.data),
-  DPRD_PROVINSI: await import("../data/options/dapil-dprd-provinsi.json").then((m) => m.data),
+  DPD: await import("./data/dapil/dapil-dpd.json").then((m) => m.data),
+  DPR: await import("./data/dapil/dapil-dpr.json").then((m) => m.data),
+  DPRD_KABKOTA: await import("./data/dapil/dapil-dprd-kabkota.json").then((m) => m.data),
+  DPRD_PROVINSI: await import("./data/dapil/dapil-dprd-provinsi.json").then((m) => m.data),
 } as const;
 
 const getCalegEndpoints = {

@@ -105,6 +105,10 @@ web_modules/
 .env.test.local
 .env.production.local
 .env.local
+.env.production
+
+# astro generated types
+.astro/
 
 # parcel-bundler cache (https://parceljs.org/)
 
@@ -176,3 +180,10 @@ dist
 
 # SQLite database file
 bukankpu.db
+
+.nx/cache
+# Local Netlify folder
+.netlify
+.wrangler
+crawl/db/seed/sql
+wrangler.toml

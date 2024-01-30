@@ -1,0 +1,19 @@
+---
+import { eq } from "drizzle-orm";
+
+import { calegTable } from "../../db/db.schema";
+import { drizzle } from "drizzle-orm/d1";
+
+const DB = Astro.locals.runtime.env.DB;
+const db = drizzle(DB);
+
+const caleg = await db
+  .select()
+  .from(calegTable)
+  .where(eq(calegTable.id, Number(Astro.params.id)))
+  .get();
+---
+
+<div>
+  {JSON.stringify(caleg?.name)}
+</div>

@@ -1,0 +1,10 @@
+compatibility_date = "2023-11-21"
+name = "bukankpu"
+
+# source: https://developers.cloudflare.com/d1/configuration/local-development/
+[[d1_databases]]
+binding = "DB"
+database_id = "<replace with your database id>"
+database_name = "<replace with your database name>"
+migrations_dir = "./drizzle"
+preview_database_id = "DB"
