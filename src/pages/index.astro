@@ -3,6 +3,8 @@ import { drizzle } from "drizzle-orm/d1";
 import { calegTable } from "../db/db.schema";
 import { random } from "lodash-es";
 
+export const prerender = true;
+
 const DB = Astro.locals.runtime.env.DB;
 const db = drizzle(DB);
 
