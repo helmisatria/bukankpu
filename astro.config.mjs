@@ -12,7 +12,10 @@ export default defineConfig({
       bindings: {
         DB: {
           type: "d1"
-        }
+        },
+        "KV": {
+          type: "kv",
+        },
       }
     }
   })

@@ -5,7 +5,7 @@ type D1Database = import("@cloudflare/workers-types").D1Database;
 
 type ENV = {
   SERVER_URL: string;
-  KV_BINDING: KVNamespace;
+  KV: KVNamespace;
   DB: D1Database;
 };
 

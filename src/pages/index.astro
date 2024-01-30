@@ -1,12 +1,23 @@
 ---
 import { drizzle } from "drizzle-orm/d1";
-import { calegTable } from "../db/db.schema";
+import { calegTable, type SelectCaleg } from "../db/db.schema";
 import { random } from "lodash-es";
 
 const DB = Astro.locals.runtime.env.DB;
+const KV = Astro.locals.runtime.env.KV;
 const db = drizzle(DB);
 
-const data = await db.select().from(calegTable).limit(10).offset(random(100, 10000)).all();
+const cachedData = await KV.get("caleg");
+
+let dataCaleg: SelectCaleg[] = [];
+
+if (cachedData) {
+  dataCaleg = JSON.parse(cachedData);
+} else {
+  const data = await db.select().from(calegTable).limit(10).offset(random(100, 10000)).all();
+  await KV.put("caleg", JSON.stringify(data), { expirationTtl: 60 });
+  dataCaleg = data;
+}
 ---
 
 <html lang="en">
@@ -29,7 +40,7 @@ const data = await db.select().from(calegTable).limit(10).offset(random(100, 100
       </thead>
       <tbody>
         {
-          data.map((row) => (
+          dataCaleg.map((row) => (
             <tr>
               <td>{row.id}</td>
               <td>{row.name}</td>
