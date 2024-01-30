@@ -2,6 +2,11 @@
 
 Creating better website for KPU's caleg data and providing learning materials for those interested in web performance optimization. With the large amount of data obtained from KPU, we can learn how to handle "not that big data" 260.000+ caleg and how to keep it as high-performing websites.
 
+## Challenges
+
+- [ ] Get all caleg data from KPU
+- [ ] Create a high-performing website that can handle 260.000+ caleg data
+
 ## Overview
 
 Bukankpu is a tool for getting and showing election data from the Indonesian General Elections Commission (Komisi Pemilihan Umum, KPU) website [infopemilu.kpu.go.id](https://infopemilu.kpu.go.id/). It makes using this data easier and faster.
