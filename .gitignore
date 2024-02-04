@@ -185,5 +185,9 @@ bukankpu.db
 # Local Netlify folder
 .netlify
 .wrangler
+
 crawl/db/seed/sql
 wrangler.toml
+
+bukankpu.backup.db
+crawl/scripts/data/error/

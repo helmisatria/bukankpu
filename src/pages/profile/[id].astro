@@ -4,24 +4,16 @@ import { eq } from "drizzle-orm";
 import { calegTable } from "../../db/db.schema";
 import { drizzle } from "drizzle-orm/d1";
 
-export const prerender = true;
+const DB = Astro.locals.runtime.env.DB;
+const db = drizzle(DB);
 
-export const getStaticPaths = async () => {
-  return new Array(30_000).fill(0).map((_, i) => ({
-    params: { id: String(i + 1) },
-  }));
-};
-
-// const DB = Astro.locals.runtime.env.DB;
-// const db = drizzle(DB);
-
-// const caleg = await db
-//   .select()
-//   .from(calegTable)
-//   .where(eq(calegTable.id, Number(Astro.params.id)))
-//   .get();
+const caleg = await db
+  .select()
+  .from(calegTable)
+  .where(eq(calegTable.id, Number(Astro.params.id)))
+  .get();
 ---
 
 <div>
-  {JSON.stringify(Astro.params.id)}
+  {JSON.stringify(caleg?.name)}
 </div>

@@ -1,0 +1,62 @@
+---
+import type { GetStaticPaths, GetStaticPathsItem } from "astro";
+import { routeTree } from "../routeTree.gen";
+import { createMemoryHistory } from "@tanstack/react-router";
+import { StartServer } from "@tanstack/react-router-server/server";
+
+import { App, router } from "../app";
+
+/**
+ * Generate static paths for all routes in the app.
+ */
+export const getStaticPaths = (() => {
+  const paths = routeTree.children?.map((child) => child.path) ?? [];
+  const staticPaths: GetStaticPathsItem[] = paths.map((path) => ({
+    params: { path },
+  }));
+
+  const indexPath = { params: { path: undefined } } as GetStaticPathsItem;
+  return [indexPath, ...staticPaths];
+}) satisfies GetStaticPaths;
+
+const fullUrl = new URL(Astro.request.url);
+const url = fullUrl.href.replace(fullUrl.origin, "");
+
+const memoryHistory = createMemoryHistory({
+  initialEntries: [url],
+});
+
+router.update({ history: memoryHistory });
+
+/**
+ * Load the route data for the current page (SSR purposes)
+ */
+await router.load();
+
+const getMatches = (path: string) => {
+  // remove trailing slash but exclude root path
+  const cleanPath = path === "/" ? path : path.replace(/\/$/, "");
+
+  const directlyMatched = router.state.matches.find((match) => match.id === cleanPath);
+  const matches = router.state.matches.filter((match) => match.pathname === cleanPath);
+
+  return directlyMatched ? [directlyMatched] : matches;
+};
+
+const { title = "BukanKPU" } = getMatches(url)?.[0]?.context ?? {};
+
+import "@fontsource-variable/plus-jakarta-sans";
+import "@/styles/globals.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <App client:only="react" />
+    <!-- <StartServer router={router} /> -->
+  </body>
+</html>

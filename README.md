@@ -20,3 +20,17 @@ Bukankpu is a tool for getting and showing election data from the Indonesian Gen
    - Less server request
    - Image optimization
    - Static site when possible
+
+## Development Notes
+
+### Image Compression
+
+- [x] Scan data that doesnt have `compressedPhotoUrl`/`compressed_photo_url` on sqlite db
+- [x] Compress image using sharp
+- [x] Upload to R2 bucket and update `compressedPhotoUrl`/`compressed_photo_url` on sqlite db
+
+#### Steps
+
+- Create bucket in R2 `wrangler r2 bucket create bukankpu`
+- Create `accessKeyId`, `secretAccessKey`, get `endpoint` from R2 dashboard
+- TBD

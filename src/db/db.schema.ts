@@ -1,4 +1,4 @@
-import { sqliteTable, text, integer } from "drizzle-orm/sqlite-core";
+import { sqliteTable, text, integer, unique } from "drizzle-orm/sqlite-core";
 
 export type SelectCaleg = typeof calegTable.$inferSelect;
 
@@ -12,6 +12,7 @@ export const calegTable = sqliteTable("caleg", {
   dapil: text("dapil"),
   noUrut: text("no_urut"),
   photoUrl: text("photo_url"),
+  compressedPhotoUrl: text("compressed_photo_url"),
   name: text("name"),
   gender: text("gender"),
   birthPlace: text("birth_place"),
@@ -80,3 +81,20 @@ export const crawlStatus = sqliteTable("crawl_status", {
   dapilCode: text("dapil_code").unique(),
   updatedAt: text("updated_at"),
 });
+
+export const dapilTable = sqliteTable(
+  "dapil",
+  {
+    id: integer("id").primaryKey({ autoIncrement: true }),
+    dapilCode: text("dapil_code"),
+    dapilType: text("dapil_type", { enum: ["DPR", "DPRD_KABKOTA", "DPRD_PROVINSI"] }),
+    dapilName: text("dapil_name"),
+    administrativeCode: text("administrative_code", { enum: ["Kabupaten/Kota", "Kecamatan"] }),
+    areaCode: text("area_code"),
+    areaName: text("area_name"),
+    createdAt: text("created_at"),
+  },
+  (t) => ({
+    unq: unique().on(t.dapilCode, t.areaCode),
+  })
+);

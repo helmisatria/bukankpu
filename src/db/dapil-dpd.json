@@ -1,0 +1,156 @@
+{
+  "data": [
+    {
+      "kode_pro": "11",
+      "nama_wilayah": "ACEH"
+    },
+    {
+      "kode_pro": "12",
+      "nama_wilayah": "SUMATERA UTARA"
+    },
+    {
+      "kode_pro": "13",
+      "nama_wilayah": "SUMATERA BARAT"
+    },
+    {
+      "kode_pro": "14",
+      "nama_wilayah": "RIAU"
+    },
+    {
+      "kode_pro": "15",
+      "nama_wilayah": "JAMBI"
+    },
+    {
+      "kode_pro": "16",
+      "nama_wilayah": "SUMATERA SELATAN"
+    },
+    {
+      "kode_pro": "17",
+      "nama_wilayah": "BENGKULU"
+    },
+    {
+      "kode_pro": "18",
+      "nama_wilayah": "LAMPUNG"
+    },
+    {
+      "kode_pro": "19",
+      "nama_wilayah": "KEPULAUAN BANGKA BELITUNG"
+    },
+    {
+      "kode_pro": "21",
+      "nama_wilayah": "KEPULAUAN RIAU"
+    },
+    {
+      "kode_pro": "31",
+      "nama_wilayah": "DKI JAKARTA"
+    },
+    {
+      "kode_pro": "32",
+      "nama_wilayah": "JAWA BARAT"
+    },
+    {
+      "kode_pro": "33",
+      "nama_wilayah": "JAWA TENGAH"
+    },
+    {
+      "kode_pro": "34",
+      "nama_wilayah": "DAERAH ISTIMEWA YOGYAKARTA"
+    },
+    {
+      "kode_pro": "35",
+      "nama_wilayah": "JAWA TIMUR"
+    },
+    {
+      "kode_pro": "36",
+      "nama_wilayah": "BANTEN"
+    },
+    {
+      "kode_pro": "51",
+      "nama_wilayah": "BALI"
+    },
+    {
+      "kode_pro": "52",
+      "nama_wilayah": "NUSA TENGGARA BARAT"
+    },
+    {
+      "kode_pro": "53",
+      "nama_wilayah": "NUSA TENGGARA TIMUR"
+    },
+    {
+      "kode_pro": "61",
+      "nama_wilayah": "KALIMANTAN BARAT"
+    },
+    {
+      "kode_pro": "62",
+      "nama_wilayah": "KALIMANTAN TENGAH"
+    },
+    {
+      "kode_pro": "63",
+      "nama_wilayah": "KALIMANTAN SELATAN"
+    },
+    {
+      "kode_pro": "64",
+      "nama_wilayah": "KALIMANTAN TIMUR"
+    },
+    {
+      "kode_pro": "71",
+      "nama_wilayah": "SULAWESI UTARA"
+    },
+    {
+      "kode_pro": "72",
+      "nama_wilayah": "SULAWESI TENGAH"
+    },
+    {
+      "kode_pro": "73",
+      "nama_wilayah": "SULAWESI SELATAN"
+    },
+    {
+      "kode_pro": "74",
+      "nama_wilayah": "SULAWESI TENGGARA"
+    },
+    {
+      "kode_pro": "75",
+      "nama_wilayah": "GORONTALO"
+    },
+    {
+      "kode_pro": "76",
+      "nama_wilayah": "SULAWESI BARAT"
+    },
+    {
+      "kode_pro": "81",
+      "nama_wilayah": "MALUKU"
+    },
+    {
+      "kode_pro": "82",
+      "nama_wilayah": "MALUKU UTARA"
+    },
+    {
+      "kode_pro": "91",
+      "nama_wilayah": "PAPUA"
+    },
+    {
+      "kode_pro": "92",
+      "nama_wilayah": "PAPUA BARAT"
+    },
+    {
+      "kode_pro": "65",
+      "nama_wilayah": "KALIMANTAN UTARA"
+    },
+    {
+      "kode_pro": "93",
+      "nama_wilayah": "PAPUA SELATAN"
+    },
+    {
+      "kode_pro": "94",
+      "nama_wilayah": "PAPUA TENGAH"
+    },
+    {
+      "kode_pro": "95",
+      "nama_wilayah": "PAPUA PEGUNUNGAN"
+    },
+    {
+      "kode_pro": "96",
+      "nama_wilayah": "PAPUA BARAT DAYA"
+    }
+  ]
+}
