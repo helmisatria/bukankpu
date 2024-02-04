@@ -24,7 +24,7 @@ export const GET: APIRoute = async (context) => {
   return new Response(JSON.stringify(calegData), {
     headers: {
       "Content-Type": "application/json",
-      "Cache-Control": "public, max-age=3000, s-maxage=3000, stale-while-revalidate=3000",
+      "Cache-Control": "public, max-age=3000, s-maxage=3000",
     },
     status: 200,
   });
