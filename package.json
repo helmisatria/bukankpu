@@ -8,6 +8,7 @@
     "db:generate": "drizzle-kit generate:sqlite",
     "web:dev": "astro dev",
     "web:start": "astro dev",
+    "web:build:local": "export NODE_OPTIONS=\"--max-old-space-size=12192\" astro check && astro build",
     "web:build": "astro check && astro build",
     "web:preview": "wrangler pages dev ./dist",
     "d1:seed:local": "cross-env DB_ENV=local tsx crawl/db/seed/seed.sqlite-to-d1.ts",
