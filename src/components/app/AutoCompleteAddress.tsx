@@ -98,7 +98,7 @@ export function AutoCompleteAddress(props: AutoCompleteAddressProps) {
       <div className="relative mt-2">
         <Combobox.Input
           ref={inputRef}
-          placeholder="Contoh: Ngemplak Sleman"
+          placeholder="Contoh: Kebayoran Baru, Jakarta"
           title="Pilih address"
           className="w-full rounded-md border-0 bg-white py-2 pl-3 pr-10 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
           value={value}
