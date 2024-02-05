@@ -2,11 +2,12 @@ import type { SelectCaleg } from "@/db/db.schema";
 import { partaiLogo } from "@/lib/constants";
 import { toTitleCase } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, type ReactEventHandler } from "react";
 
 function ImageWithSpinner({ caleg, index }: { caleg: SelectCaleg; index: number }) {
   // Assume image is not loading by default if it's lazy loaded
   const [isLoading, setIsLoading] = useState(index <= 6);
+  const hasErrorOccurred = useRef(false); // Ref to track if error has already occurred
 
   useEffect(() => {
     // If the image is supposed to be lazy loaded and is not in the viewport initially,
@@ -16,6 +17,14 @@ function ImageWithSpinner({ caleg, index }: { caleg: SelectCaleg; index: number 
       setIsLoading(false);
     }
   }, [index]);
+
+  const handleError: ReactEventHandler<HTMLImageElement> = (e) => {
+    if (!hasErrorOccurred.current) {
+      e.currentTarget.src = caleg.photoUrl || "";
+      hasErrorOccurred.current = true; // Mark that an error has occurred to prevent future updates
+      setIsLoading(false);
+    }
+  };
 
   return (
     <div className="h-60 w-full rounded relative">
@@ -28,10 +37,7 @@ function ImageWithSpinner({ caleg, index }: { caleg: SelectCaleg; index: number 
       <img
         className="h-60 w-full object-cover rounded"
         src={caleg.compressedPhotoUrl || caleg.photoUrl || ""}
-        onError={(e) => {
-          e.currentTarget.src = caleg.photoUrl || "";
-          setIsLoading(false);
-        }}
+        onError={handleError}
         loading={index <= 6 ? "eager" : "lazy"}
         onLoad={() => setIsLoading(false)}
         alt={caleg.name!}

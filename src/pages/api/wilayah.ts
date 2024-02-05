@@ -27,6 +27,7 @@ export const GET: APIRoute = async ({ url, locals }) => {
   return new Response(JSON.stringify(dapil[search]), {
     headers: {
       "Content-Type": "application/json",
+      "Cache-Control": "public, max-age=3000, s-maxage=3000",
     },
   });
 };

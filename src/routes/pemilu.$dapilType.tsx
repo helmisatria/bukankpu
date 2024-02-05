@@ -1,12 +1,13 @@
+import { AutoCompleteAddress } from "@/components/app/AutoCompleteAddress";
 import { AutoCompleteWilayah } from "@/components/app/AutoCompleteWilayah";
 import { CardCaleg } from "@/components/app/CardCaleg";
 import { dapilEnumToParams, dapilEnums, dapilLabels, dapilParamsToEnum } from "@/lib/constants";
 import type { DapilParamsType } from "@/lib/types";
 import { useCaleg } from "@/queries/useCaleg";
 import { useWilayah } from "@/queries/useWilayah";
-import { selectedDapilAtom } from "@/store/global";
+import { selectedDapilAtom, selectedAddressSuggestionAtom, resetAllSelectedAtom } from "@/store/global";
 import { Link, createFileRoute, redirect } from "@tanstack/react-router";
-import { useAtom } from "jotai";
+import { useAtom, useSetAtom } from "jotai";
 import { orderBy } from "lodash-es";
 
 const enums = ["dpr", "dpd", "dprd-kabkota", "dprd-provinsi"];
@@ -32,32 +33,63 @@ export const Route = createFileRoute("/pemilu/$dapilType")({
 function PemiluDapil() {
   const { dapilType } = Route.useLoaderData();
   const [selectedDapil] = useAtom(selectedDapilAtom);
+  const [selectedAddressSuggestion] = useAtom(selectedAddressSuggestionAtom);
+  const resetAllSelected = useSetAtom(resetAllSelectedAtom);
 
   const { data } = useWilayah(dapilType);
   let { data: listCaleg } = useCaleg(dapilType);
 
   listCaleg = orderBy(listCaleg, ["profileId"], ["desc"]);
 
-  return (
-    <div className="max-w-md bg-gray-50 mx-auto shadow-md min-h-screen prose">
-      <header className="px-5 py-6">
-        <h1 className="font-semibold text-xl">Bukan KPU</h1>
+  function handleResetAddress() {
+    resetAllSelected();
+  }
 
-        {dapilLabels[dapilParamsToEnum[dapilType]]}
+  return (
+    <div className="max-w-md bg-gray-50 mx-auto shadow-md min-h-screen flex flex-col prose">
+      <header className="px-5 py-6">
+        <div className="flex items-center justify-between">
+          <h1 className="font-semibold text-gray-500 text-base">{dapilLabels[dapilParamsToEnum[dapilType]]}</h1>
+          <span className="font-semibold text-sm text-gray-400">Bukan KPU</span>
+        </div>
         <AutoCompleteWilayah data={data} />
       </header>
 
-      <main className="px-5 pb-32">
-        {selectedDapil[dapilParamsToEnum[dapilType]] ? (
+      <main className="px-5 pb-32 flex-1 flex flex-col">
+        {selectedDapil[dapilParamsToEnum[dapilType]] && (
           <>
-            <h2 className="text-lg font-semibold">Daftar Caleg</h2>
+            {selectedAddressSuggestion && (
+              <div>
+                <span className="text-gray-500 text-sm">Berdasarkan Alamat</span>
+                <div className="flex justify-between gap-x-2">
+                  <p>{selectedAddressSuggestion.text}</p>
+                  <button onClick={handleResetAddress} className="text-blue-500 font-medium">
+                    Ubah
+                  </button>
+                </div>
+              </div>
+            )}
             <ul className="grid grid-cols-2 gap-3 pt-3">
               {listCaleg?.map((caleg, index) => <CardCaleg key={caleg.id} caleg={caleg} index={index} />)}
             </ul>
           </>
-        ) : (
-          <></>
-          // <AutoCompleteAddress />
+        )}
+
+        {!selectedDapil[dapilParamsToEnum[dapilType]] && (
+          <div className="flex flex-col text-left justify-center flex-1 pb-32">
+            <p className="text-gray-800 text-xl font-semibold">Pilih dapil terlebih dahulu</p>
+
+            <div>
+              <p className="text-sm text-gray-700 mt-1 max-w-[280px]">
+                Bisa coba cari dapil berdasarkan kecamatan/kabupaten kamu mencoblos
+              </p>
+            </div>
+
+            <div className="mt-2">
+              <AutoCompleteAddress />
+              <p className="text-xs text-gray-500 pt-2 text-left">Catatan: harap pastikan lagi berdasarkan data KPU</p>
+            </div>
+          </div>
         )}
       </main>
 

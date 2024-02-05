@@ -17,7 +17,24 @@ export const GET: APIRoute = async (context) => {
   }
 
   const calegData = await db
-    .select()
+    .select({
+      id: calegTable.id,
+      name: calegTable.name,
+      calegType: calegTable.calegType,
+      education: calegTable.education,
+      age: calegTable.age,
+      organization: calegTable.organization,
+      awards: calegTable.awards,
+      partai: calegTable.partai,
+      photoUrl: calegTable.photoUrl,
+      compressedPhotoUrl: calegTable.compressedPhotoUrl,
+      jobStatus: calegTable.jobStatus,
+      job: calegTable.job,
+      courses: calegTable.courses,
+      lawStatus: calegTable.lawStatus,
+      profileId: calegTable.profileId,
+      profileUpdatedAt: calegTable.profileUpdatedAt,
+    })
     .from(calegTable)
     .where(and(eq(calegTable.calegType, dapilType), eq(calegTable.dapilCode, dapilCode)));
 
@@ -26,6 +43,5 @@ export const GET: APIRoute = async (context) => {
       "Content-Type": "application/json",
       "Cache-Control": "public, max-age=3000, s-maxage=3000",
     },
-    status: 200,
   });
 };
