@@ -12,12 +12,12 @@ export const useCaleg = (dapilType: DapilParamsType) => {
   const enumDapilType = dapilParamsToEnum[dapilType] as DapilType;
 
   return useQuery({
-    queryKey: ["caleg", dapilType, selectedDapil[enumDapilType]?.kode_dapil],
-    // staleTime: Infinity,
-    enabled: !!selectedDapil[enumDapilType]?.kode_dapil,
+    queryKey: ["caleg", dapilType, selectedDapil?.[enumDapilType]?.kode_dapil],
+    staleTime: Infinity,
+    enabled: !!selectedDapil?.[enumDapilType]?.kode_dapil,
     queryFn: async () => {
       const response = await axios.get<SelectCaleg[]>("/api/caleg", {
-        params: { dapil_type: dapilParamsToEnum[dapilType], dapil_code: selectedDapil[enumDapilType]?.kode_dapil },
+        params: { dapil_type: dapilParamsToEnum[dapilType], dapil_code: selectedDapil?.[enumDapilType]?.kode_dapil },
       });
 
       return response.data;

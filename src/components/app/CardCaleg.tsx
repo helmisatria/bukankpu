@@ -83,7 +83,7 @@ export const CardCaleg = ({ caleg, index }: { caleg: SelectCaleg; index: number 
           <div className="mb-2">
             <ul className="inline-flex flex-wrap gap-1">
               {!shareable && (
-                <li className="p-1 leading-4 text-xs font-semibold bg-pink-700/70 text-white w-2/3 rounded">
+                <li className="p-1 leading-4 text-xs font-semibold bg-pink-700/70 text-white md:w-2/3 rounded">
                   Tidak bersedia publikasi profile
                 </li>
               )}

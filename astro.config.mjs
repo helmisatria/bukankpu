@@ -12,6 +12,10 @@ export default defineConfig({
   vite: {
     plugins: [TanStackRouterVite()],
   },
+  redirects: {
+    '/': '/pemilu/dpd',
+    '/pemilu': '/pemilu/dpd',
+  },
   adapter: cloudflare({
     runtime: {
       mode: "local",

@@ -48,7 +48,7 @@ export const POST: APIRoute = async (context) => {
         error: "Bad Request",
         message: "Maaf, terjadi kesalahan dalam mengambil data dapil",
       }),
-      { status: 400 }
+      { status: 400 },
     );
   }
 
@@ -83,10 +83,10 @@ export const POST: APIRoute = async (context) => {
           or(
             eq(dapilTable.areaName, region.toUpperCase()),
             sub_region ? eq(dapilTable.areaName, sub_region.toUpperCase()) : undefined,
-            sub_region ? eq(dapilTable.areaName, sub_region.split(" ").reverse().join(" ").toUpperCase()) : undefined
+            sub_region ? eq(dapilTable.areaName, sub_region.split(" ").reverse().join(" ").toUpperCase()) : undefined,
           ),
-          dapilDPD?.kode_pro ? like(dapilTable.areaCode, `${dapilDPD?.kode_pro}%`) : undefined
-        )
+          dapilDPD?.kode_pro ? like(dapilTable.areaCode, `${dapilDPD?.kode_pro}%`) : undefined,
+        ),
       );
 
     console.log("dapilDPR -->", dapilDPR);
@@ -100,11 +100,11 @@ export const POST: APIRoute = async (context) => {
           or(
             eq(dapilTable.areaName, district.toUpperCase()),
             sub_region ? eq(dapilTable.areaName, sub_region.toUpperCase()) : undefined,
-            sub_region ? eq(dapilTable.areaName, sub_region.split(" ").reverse().join(" ").toUpperCase()) : undefined
+            sub_region ? eq(dapilTable.areaName, sub_region.split(" ").reverse().join(" ").toUpperCase()) : undefined,
           ),
           dapilDPD?.kode_pro ? like(dapilTable.areaCode, `${dapilDPD?.kode_pro}%`) : undefined,
-          dapilDPR?.[0]?.areaCode ? like(dapilTable.areaCode, `${dapilDPR[0].areaCode}%`) : undefined
-        )
+          dapilDPR?.[0]?.areaCode ? like(dapilTable.areaCode, `${dapilDPR[0].areaCode}%`) : undefined,
+        ),
       );
 
     console.log({ dapilProvinsi });
@@ -118,8 +118,8 @@ export const POST: APIRoute = async (context) => {
           eq(dapilTable.areaName, city.toUpperCase()),
           dapilDPD?.kode_pro ? like(dapilTable.areaCode, `${dapilDPD?.kode_pro}%`) : undefined,
           dapilDPR?.[0]?.areaCode ? like(dapilTable.areaCode, `${dapilDPR[0].areaCode}%`) : undefined,
-          dapilProvinsi?.[0]?.areaCode ? like(dapilTable.areaCode, `${dapilProvinsi[0].areaCode}%`) : undefined
-        )
+          dapilProvinsi?.[0]?.areaCode ? like(dapilTable.areaCode, `${dapilProvinsi[0].areaCode}%`) : undefined,
+        ),
       );
 
     // recheck
@@ -135,9 +135,9 @@ export const POST: APIRoute = async (context) => {
               eq(dapilTable.areaName, region.toUpperCase()),
               sub_region ? eq(dapilTable.areaName, sub_region.toUpperCase()) : undefined,
               sub_region ? eq(dapilTable.areaName, sub_region.split(" ").reverse().join(" ").toUpperCase()) : undefined,
-              dapilKabKota?.[0]?.areaCode ? eq(dapilTable.areaCode, `${dapilKabKota[0].areaCode?.slice(0, 4)}`) : undefined
-            )
-          )
+              dapilKabKota?.[0]?.areaCode ? eq(dapilTable.areaCode, `${dapilKabKota[0].areaCode?.slice(0, 4)}`) : undefined,
+            ),
+          ),
         );
     }
 
@@ -152,9 +152,9 @@ export const POST: APIRoute = async (context) => {
               eq(dapilTable.areaName, district.toUpperCase()),
               sub_region ? eq(dapilTable.areaName, sub_region.toUpperCase()) : undefined,
               sub_region ? eq(dapilTable.areaName, sub_region.split(" ").reverse().join(" ").toUpperCase()) : undefined,
-              dapilKabKota?.[0]?.areaCode ? eq(dapilTable.areaCode, `${dapilKabKota[0].areaCode?.slice(0, 4)}`) : undefined
-            )
-          )
+              dapilKabKota?.[0]?.areaCode ? eq(dapilTable.areaCode, `${dapilKabKota[0].areaCode?.slice(0, 4)}`) : undefined,
+            ),
+          ),
         );
     }
 
@@ -197,7 +197,7 @@ export const POST: APIRoute = async (context) => {
           error: "Bad Request",
           message: "Maaf, tidak dapat menemukan dapil untuk wilayah yang kamu minta",
         }),
-        { status: 422 }
+        { status: 422 },
       );
     }
 
@@ -216,7 +216,7 @@ export const POST: APIRoute = async (context) => {
         error: "Bad Request",
         message: "Maaf, terjadi kesalahan dalam mengambil data dapil",
       }),
-      { status: 400 }
+      { status: 400 },
     );
   }
 };

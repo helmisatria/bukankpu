@@ -1,15 +1,13 @@
 import { AutoCompleteWilayah } from "@/components/app/AutoCompleteWilayah";
 import { CardCaleg } from "@/components/app/CardCaleg";
-import type { SelectCaleg } from "@/db/db.schema";
 import { dapilEnumToParams, dapilEnums, dapilLabels, dapilParamsToEnum } from "@/lib/constants";
 import type { DapilParamsType } from "@/lib/types";
-import { toTitleCase } from "@/lib/utils";
 import { useCaleg } from "@/queries/useCaleg";
 import { useWilayah } from "@/queries/useWilayah";
+import { selectedDapilAtom } from "@/store/global";
 import { Link, createFileRoute, redirect } from "@tanstack/react-router";
+import { useAtom } from "jotai";
 import { orderBy } from "lodash-es";
-import { Loader2 } from "lucide-react";
-import { useEffect, useState } from "react";
 
 const enums = ["dpr", "dpd", "dprd-kabkota", "dprd-provinsi"];
 
@@ -33,6 +31,7 @@ export const Route = createFileRoute("/pemilu/$dapilType")({
 
 function PemiluDapil() {
   const { dapilType } = Route.useLoaderData();
+  const [selectedDapil] = useAtom(selectedDapilAtom);
 
   const { data } = useWilayah(dapilType);
   let { data: listCaleg } = useCaleg(dapilType);
@@ -49,11 +48,17 @@ function PemiluDapil() {
       </header>
 
       <main className="px-5 pb-32">
-        <h2 className="text-lg font-semibold">Daftar Caleg</h2>
-
-        <ul className="grid grid-cols-2 gap-3 pt-3">
-          {listCaleg?.map((caleg, index) => <CardCaleg key={caleg.id} caleg={caleg} index={index} />)}
-        </ul>
+        {selectedDapil[dapilParamsToEnum[dapilType]] ? (
+          <>
+            <h2 className="text-lg font-semibold">Daftar Caleg</h2>
+            <ul className="grid grid-cols-2 gap-3 pt-3">
+              {listCaleg?.map((caleg, index) => <CardCaleg key={caleg.id} caleg={caleg} index={index} />)}
+            </ul>
+          </>
+        ) : (
+          <></>
+          // <AutoCompleteAddress />
+        )}
       </main>
 
       <nav className="fixed bottom-0 w-full pb-6">
