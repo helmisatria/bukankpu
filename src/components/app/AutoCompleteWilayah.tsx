@@ -18,10 +18,6 @@ export function AutoCompleteWilayah({ data: dapil }: AutoCompleteWilayahProps) {
   const params = Route.useParams();
 
   useEffect(() => {
-    // setTimeout(() => {
-    //   if (buttonRef) buttonRef.current?.click();
-    // }, 1000);
-
     if (selectedDapil?.[dapilType]) return;
     inputRef.current?.focus();
   }, [params, buttonRef]);
@@ -52,7 +48,7 @@ export function AutoCompleteWilayah({ data: dapil }: AutoCompleteWilayahProps) {
         <Combobox.Input
           ref={inputRef}
           title="Pilih wilayah"
-          className="w-full rounded-md border-0 bg-white py-2 pl-3 pr-10 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+          className="w-full rounded-md border-0 bg-white py-2 pl-3 pr-10 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
           onChange={(event) => setQuery(event.target.value)}
           displayValue={(d: { nama_dapil: string }) => toTitleCase(d?.nama_dapil)}
         />
@@ -71,7 +67,7 @@ export function AutoCompleteWilayah({ data: dapil }: AutoCompleteWilayahProps) {
                 key={person.kode_dapil}
                 value={person}
                 className={({ active }) =>
-                  cn("relative cursor-default select-none py-2 pl-3 pr-9", active ? "bg-indigo-600 text-white" : "text-gray-900")
+                  cn("relative cursor-default select-none py-2 pl-3 pr-9", active ? "bg-blue-600 text-white" : "text-gray-900")
                 }
               >
                 {({ active, selected }) => (
@@ -82,7 +78,7 @@ export function AutoCompleteWilayah({ data: dapil }: AutoCompleteWilayahProps) {
                       <span
                         className={cn(
                           "absolute inset-y-0 right-0 flex items-center pr-4",
-                          active ? "text-white" : "text-indigo-600",
+                          active ? "text-white" : "text-blue-600",
                         )}
                       >
                         <CheckIcon className="h-5 w-5" aria-hidden="true" />

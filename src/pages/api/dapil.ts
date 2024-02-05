@@ -12,19 +12,12 @@ const requestBodySchema = z.object({
 });
 
 const responseBodySchema = z.object({
-  DPD: z
-    .object({
-      kode_wilayah: z.string(),
-      nama_wilayah: z.string(),
-      nama_dapil: z.string(),
-    })
-    .optional(),
-  DPR: z.object({
+  DPD: z.object({
     kode_wilayah: z.string(),
     nama_wilayah: z.string(),
     nama_dapil: z.string(),
   }),
-  DPRD_KABKOTA: z.object({
+  DPR: z.object({
     kode_wilayah: z.string(),
     nama_wilayah: z.string(),
     nama_dapil: z.string(),
@@ -33,6 +26,11 @@ const responseBodySchema = z.object({
     kode_wilayah: z.string(),
     nama_wilayah: z.string(),
     nama_dapil: z.string(),
+  }),
+  DPRD_KABKOTA: z.object({
+    kode_wilayah: z.string().optional(),
+    nama_wilayah: z.string().optional(),
+    nama_dapil: z.string().optional(),
   }),
 });
 
@@ -70,7 +68,7 @@ export const POST: APIRoute = async (context) => {
   try {
     const allDapilDPD = (await import("../../db/dapil-dpd.json")).data;
 
-    const dapilDPD = allDapilDPD.find((d) => d.nama_wilayah === region.toUpperCase());
+    const dapilDPD = allDapilDPD.find((d) => d.nama_wilayah.includes(region.toUpperCase()));
     console.log("dapilDPD -->", dapilDPD);
 
     let dapilDPR = await db
@@ -124,21 +122,37 @@ export const POST: APIRoute = async (context) => {
 
     // recheck
     if (!dapilDPR[0]) {
-      console.log(dapilKabKota[0].areaCode?.slice(0, 4));
-      dapilDPR = await db
-        .select()
-        .from(dapilTable)
-        .where(
-          and(
-            eq(dapilTable.dapilType, "DPR"),
-            or(
-              eq(dapilTable.areaName, region.toUpperCase()),
-              sub_region ? eq(dapilTable.areaName, sub_region.toUpperCase()) : undefined,
-              sub_region ? eq(dapilTable.areaName, sub_region.split(" ").reverse().join(" ").toUpperCase()) : undefined,
-              dapilKabKota?.[0]?.areaCode ? eq(dapilTable.areaCode, `${dapilKabKota[0].areaCode?.slice(0, 4)}`) : undefined,
+      if (dapilProvinsi) {
+        dapilDPR = await db
+          .select()
+          .from(dapilTable)
+          .where(
+            and(
+              eq(dapilTable.dapilType, "DPR"),
+              or(
+                eq(dapilTable.areaName, region.toUpperCase()),
+                sub_region ? eq(dapilTable.areaName, sub_region.toUpperCase()) : undefined,
+                sub_region ? eq(dapilTable.areaName, sub_region.split(" ").reverse().join(" ").toUpperCase()) : undefined,
+                dapilProvinsi?.[0]?.areaCode ? eq(dapilTable.areaCode, `${dapilProvinsi[0].areaCode?.slice(0, 4)}`) : undefined,
+              ),
             ),
-          ),
-        );
+          );
+      } else if (dapilKabKota[0]) {
+        dapilDPR = await db
+          .select()
+          .from(dapilTable)
+          .where(
+            and(
+              eq(dapilTable.dapilType, "DPR"),
+              or(
+                eq(dapilTable.areaName, region.toUpperCase()),
+                sub_region ? eq(dapilTable.areaName, sub_region.toUpperCase()) : undefined,
+                sub_region ? eq(dapilTable.areaName, sub_region.split(" ").reverse().join(" ").toUpperCase()) : undefined,
+                dapilKabKota?.[0]?.areaCode ? eq(dapilTable.areaCode, `${dapilKabKota[0].areaCode?.slice(0, 4)}`) : undefined,
+              ),
+            ),
+          );
+      }
     }
 
     if (!dapilProvinsi[0]) {

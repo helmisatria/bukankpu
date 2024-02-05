@@ -23,7 +23,7 @@ export const useMutationSuggestAddress = () => {
         },
       });
 
-      return response.data;
+      return response.data as Response;
     },
   });
 };

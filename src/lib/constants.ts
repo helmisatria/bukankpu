@@ -1,4 +1,4 @@
-export const dapilEnums = ["DPD", "DPR", "DPRD_KABKOTA", "DPRD_PROVINSI"] as const;
+export const dapilEnums = ["DPD", "DPR", "DPRD_PROVINSI", "DPRD_KABKOTA"] as const;
 export const dapilEnumToParams = {
   DPD: "dpd",
   DPR: "dpr",
