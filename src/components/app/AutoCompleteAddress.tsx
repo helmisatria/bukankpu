@@ -2,11 +2,7 @@ import { useEffect, useRef, useState, type ChangeEvent } from "react";
 import { Combobox } from "@headlessui/react";
 import { CheckIcon, ChevronsUpDownIcon } from "lucide-react";
 import { cn, toTitleCase } from "@/lib/utils";
-import { Route } from "@/routes/pemilu.$dapilType";
-import { dapilParamsToEnum } from "@/lib/constants";
-import type { DapilParamsType } from "@/lib/types";
 import { useDebouncedValue } from "@mantine/hooks";
-import { useMutationSuggestAddress } from "@/queries/useMutationSuggestAddress";
 import { useAtom } from "jotai";
 import { addressDetailAtom, addressSuggestionsAtom, selectedDapilAtom, selectedAddressSuggestionAtom } from "@/store/global";
 import { useMutation } from "@tanstack/react-query";
@@ -42,7 +38,6 @@ export function AutoCompleteAddress(props: AutoCompleteAddressProps) {
 
     // empty selected suggestion when changing value
     if (selectedSuggestion?.text !== debouncedValue) {
-      console.log(selectedSuggestion?.text, debouncedValue);
       setAddressSuggestions([]);
     }
 

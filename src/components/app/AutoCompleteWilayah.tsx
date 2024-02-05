@@ -6,7 +6,7 @@ import { Route } from "@/routes/pemilu.$dapilType";
 import { useAtom } from "jotai";
 import { selectedDapilAtom } from "@/store/global";
 import { dapilParamsToEnum } from "@/lib/constants";
-import type { DapilParamsType, DapilType } from "@/lib/types";
+import type { DapilParamsType } from "@/lib/types";
 
 type AutoCompleteWilayahProps = {
   data: { kode_dapil: string; nama_dapil: string }[] | undefined;
