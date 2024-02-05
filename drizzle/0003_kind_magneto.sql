@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `caleg_id_caleg_id_unique` ON `caleg` (`id`,`caleg_id`);

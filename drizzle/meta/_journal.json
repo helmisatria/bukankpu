@@ -8,6 +8,27 @@
       "when": 1706547371526,
       "tag": "0000_eager_hex",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1706689833654,
+      "tag": "0001_nifty_scarlet_witch",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1706971095962,
+      "tag": "0002_mean_mordo",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1707064286991,
+      "tag": "0003_kind_magneto",
+      "breakpoints": true
     }
   ]
 }

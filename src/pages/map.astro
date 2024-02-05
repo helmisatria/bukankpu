@@ -1,0 +1,118 @@
+---
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+
+    <title>Astro</title>
+  </head>
+  <body>
+    <div id="address"></div>
+
+    <pre>
+      <div id="api" />
+
+    </pre>
+
+    <div id="map" style="width: 500px; height: 500px;"></div>
+
+    <script type="module">
+      var map = L.map("map").setView([-7.79558, 110.369492], 13);
+
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(map);
+
+      map.on("contextmenu", function (event) {
+        console.log("user right-clicked on map coordinates: " + event.latlng.toString());
+        alert("user right-clicked on map coordinates: " + event.latlng.toString());
+        L.marker(event.latlng).addTo(map);
+      });
+    </script>
+
+    <script type="module">
+      // Get the address element
+      var addressElement = document.getElementById("address");
+      var apiElement = document.getElementById("api");
+
+      // Check if geolocation is supported
+      if (navigator.geolocation) {
+        // Get the user's current position
+        navigator.geolocation.getCurrentPosition(
+          function (position) {
+            // Retrieve the latitude and longitude
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+
+            // Construct the ESRI Geocoding API URL
+            var url = `https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/reverseGeocode?location=${lng},${lat}&f=json`;
+
+            // Make a GET request using fetch
+            fetch(url)
+              .then(function (response) {
+                return response.json();
+              })
+              .then(function (data) {
+                // Extract the address from the response
+                var address = data.address;
+
+                apiElement.innerHTML = JSON.stringify(data, null, 2);
+
+                // Extract specific address components
+                var street = address.Address;
+                var city = address.City;
+                var state = address.Region;
+                var country = address.CountryCode;
+
+                // Format the full address
+                var fullAddress = street + ", " + city + ", " + state + ", " + country;
+
+                // Set the address as the innerHTML of the address element
+                addressElement.innerHTML = fullAddress;
+
+                fetch("/api/dapil", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify({
+                    district: data.address.District,
+                    city: data.address.City,
+                    region: data.address.Region,
+                  }),
+                })
+                  .then((response) => response.json())
+                  .then((data) => {
+                    console.log("Success:", data);
+                  });
+              })
+              .catch(function (error) {
+                console.log("Error:", error);
+              });
+          },
+          function (error) {
+            console.log("Error:", error);
+          },
+        );
+      } else {
+        console.log("Geolocation is not supported");
+      }
+    </script>
+  </body>
+</html>

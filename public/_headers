@@ -1,0 +1,5 @@
+/*
+  Cache-Control: public, max-age=60, s-maxage=60
+
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex

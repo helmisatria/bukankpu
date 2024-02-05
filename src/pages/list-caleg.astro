@@ -1,0 +1,55 @@
+---
+import { drizzle } from "drizzle-orm/d1";
+import { calegTable, type SelectCaleg } from "../db/db.schema";
+import { random } from "lodash-es";
+
+const DB = Astro.locals.runtime.env.DB;
+const KV = Astro.locals.runtime.env.KV;
+const db = drizzle(DB);
+
+const cachedData = await KV.get("caleg");
+
+let dataCaleg: SelectCaleg[] = [];
+
+if (cachedData) {
+  dataCaleg = JSON.parse(cachedData);
+} else {
+  const data = await db.select().from(calegTable).limit(10).offset(random(100, 10000)).all();
+  await KV.put("caleg", JSON.stringify(data), { expirationTtl: 60 });
+  dataCaleg = data;
+}
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>nama</th>
+          <th>partai</th>
+          <th>dapil</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          dataCaleg.map((row) => (
+            <tr>
+              <td>{row.id}</td>
+              <td>{row.name}</td>
+              <td>{row.partai}</td>
+              <td>{row.dapil}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </body>
+</html>

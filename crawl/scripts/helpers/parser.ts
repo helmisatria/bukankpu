@@ -1,4 +1,4 @@
-import type { SelectCaleg } from "../db/db.schema";
+import type { SelectCaleg } from "../../../src/db/db.schema";
 
 export const extractDapilDPD = (input: string): string => {
   const match = input.match(/<b><font size="3">(.*?)<\/font><\/b>/);
