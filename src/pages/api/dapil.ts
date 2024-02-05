@@ -137,7 +137,9 @@ export const POST: APIRoute = async (context) => {
               ),
             ),
           );
-      } else if (dapilKabKota[0]) {
+      }
+
+      if (!dapilDPR.length && dapilKabKota[0]) {
         dapilDPR = await db
           .select()
           .from(dapilTable)
