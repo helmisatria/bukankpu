@@ -1,5 +1,5 @@
 import { atomWithStorage } from "jotai/utils";
-import { withImmer } from "jotai-immer";
+import { atomWithImmer, withImmer } from "jotai-immer";
 import type { DapilType } from "@/lib/types";
 import { atom } from "jotai";
 
@@ -116,3 +116,11 @@ type GeocodingResponse = {
 };
 
 export const addressDetailAtom = atom<GeocodingResponse | null>(null);
+
+export const filterCalegAtom = atomWithImmer<{
+  partai: string[];
+  pendidikan: string[];
+}>({
+  partai: [],
+  pendidikan: [],
+});

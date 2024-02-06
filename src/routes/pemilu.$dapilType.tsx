@@ -1,6 +1,7 @@
 import { AutoCompleteAddress } from "@/components/app/AutoCompleteAddress";
 import { AutoCompleteWilayah } from "@/components/app/AutoCompleteWilayah";
 import { CardCaleg } from "@/components/app/CardCaleg";
+import { FilterCaleg, useFilteredListCaleg } from "@/components/app/FilterCaleg";
 import { dapilEnumToParams, dapilEnums, dapilLabels, dapilParamsToEnum } from "@/lib/constants";
 import type { DapilParamsType } from "@/lib/types";
 import { useCaleg } from "@/queries/useCaleg";
@@ -45,6 +46,8 @@ function PemiluDapil() {
     resetAllSelected();
   }
 
+  const filteredListCaleg = useFilteredListCaleg(listCaleg);
+
   return (
     <div className="max-w-md bg-gray-50 mx-auto shadow-md min-h-screen flex flex-col prose">
       <header className="px-5 pt-6 sticky top-0 z-10 from-white to-transparent bg-gradient-to-b">
@@ -75,8 +78,13 @@ function PemiluDapil() {
                 </div>
               </div>
             )}
+
+            <div className="mt-2">
+              <FilterCaleg />
+            </div>
+
             <ul className="grid grid-cols-2 gap-3 pt-3">
-              {listCaleg?.map((caleg, index) => <CardCaleg key={caleg.id} caleg={caleg} index={index} />)}
+              {filteredListCaleg?.map((caleg, index) => <CardCaleg key={caleg.id} caleg={caleg} index={index} />)}
             </ul>
           </>
         )}
