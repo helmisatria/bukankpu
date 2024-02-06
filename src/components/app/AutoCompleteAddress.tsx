@@ -13,7 +13,6 @@ type AutoCompleteAddressProps = {};
 
 export function AutoCompleteAddress(props: AutoCompleteAddressProps) {
   const inputRef = useRef<HTMLInputElement>(null);
-  const isMounted = useRef(false);
 
   const [addressSuggestions, setAddressSuggestions] = useAtom(addressSuggestionsAtom);
   const [selectedSuggestion, setSelectedSuggestion] = useAtom(selectedAddressSuggestionAtom);
@@ -25,6 +24,10 @@ export function AutoCompleteAddress(props: AutoCompleteAddressProps) {
   const mutationSuggestAddress = useMutation({ mutationFn: suggestAddress });
   const mutationGetAddressDetail = useMutation({ mutationFn: getAddressFromMagicKey });
   const mutationGetDapil = useMutation({ mutationFn: getDapil });
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);

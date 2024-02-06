@@ -17,11 +17,6 @@ export function AutoCompleteWilayah({ data: dapil }: AutoCompleteWilayahProps) {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const params = Route.useParams();
 
-  useEffect(() => {
-    if (selectedDapil?.[dapilType]) return;
-    inputRef.current?.focus();
-  }, [params, buttonRef]);
-
   const dapilType = dapilParamsToEnum[params.dapilType as DapilParamsType];
 
   const [selectedDapil, setSelectedDapil] = useAtom(selectedDapilAtom);
@@ -47,6 +42,10 @@ export function AutoCompleteWilayah({ data: dapil }: AutoCompleteWilayahProps) {
       <div className="relative mt-2">
         <Combobox.Input
           ref={inputRef}
+          placeholder="Pilih wilayah"
+          onFocus={() => {
+            buttonRef.current?.click();
+          }}
           title="Pilih wilayah"
           className="w-full rounded-md border-0 bg-white py-2 pl-3 pr-10 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
           onChange={(event) => setQuery(event.target.value)}

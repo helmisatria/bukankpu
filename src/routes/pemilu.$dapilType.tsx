@@ -37,7 +37,7 @@ function PemiluDapil() {
   const resetAllSelected = useSetAtom(resetAllSelectedAtom);
 
   const { data } = useWilayah(dapilType);
-  let { data: listCaleg } = useCaleg(dapilType);
+  let { data: listCaleg, isLoading: isLoadingCaleg } = useCaleg(dapilType);
 
   listCaleg = orderBy(listCaleg, ["profileId"], ["desc"]);
 
@@ -47,7 +47,7 @@ function PemiluDapil() {
 
   return (
     <div className="max-w-md bg-gray-50 mx-auto shadow-md min-h-screen flex flex-col prose">
-      <header className="px-5 py-6">
+      <header className="px-5 pt-6 sticky top-0 z-10 from-white to-transparent bg-gradient-to-b">
         <div className="flex items-center justify-between">
           <h1 className="font-semibold text-gray-500 text-base">{dapilLabels[dapilParamsToEnum[dapilType]]}</h1>
           <span className="font-semibold text-sm text-gray-400">Bukan KPU</span>
@@ -55,15 +55,21 @@ function PemiluDapil() {
         <AutoCompleteWilayah data={data} />
       </header>
 
-      <main className="px-5 pb-32 flex-1 flex flex-col">
-        {selectedDapil[dapilParamsToEnum[dapilType]] && (
+      <main className="px-5 pb-32 flex-1 flex flex-col mt-2">
+        {isLoadingCaleg && (
+          <div className="flex justify-center items-center flex-1">
+            <p className="text-gray-600 text-sm">Sedang mengambil data...</p>
+          </div>
+        )}
+
+        {selectedDapil[dapilParamsToEnum[dapilType]] && listCaleg.length > 0 && (
           <>
             {selectedAddressSuggestion && (
               <div>
                 <span className="text-gray-500 text-sm">Berdasarkan Alamat</span>
-                <div className="flex justify-between gap-x-2">
-                  <p>{selectedAddressSuggestion.text}</p>
-                  <button onClick={handleResetAddress} className="text-blue-500 font-medium">
+                <div className="flex justify-between leading-5 gap-x-2">
+                  <p className="text-sm">{selectedAddressSuggestion.text}</p>
+                  <button onClick={handleResetAddress} className="text-blue-500 text-sm font-medium">
                     Ubah
                   </button>
                 </div>

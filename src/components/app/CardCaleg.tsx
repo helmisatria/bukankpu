@@ -63,7 +63,7 @@ export const CardCaleg = ({ caleg, index }: { caleg: SelectCaleg; index: number 
 
   return (
     <li key={caleg.id} className="rounded">
-      <a href="#" className="flex rounded shadow relative flex-col w-full h-60 bg-white">
+      <div className="flex rounded shadow relative flex-col w-full h-60 bg-white">
         <ImageWithSpinner caleg={caleg} index={index} />
 
         <div className="absolute w-full h-36 bg-gradient-to-t rounded from-white to-transparent from-5% via-white/60 bottom-0"></div>
@@ -111,7 +111,7 @@ export const CardCaleg = ({ caleg, index }: { caleg: SelectCaleg; index: number 
             {toTitleCase(caleg.name!)}
           </h2>
         </div>
-      </a>
+      </div>
     </li>
   );
 };
